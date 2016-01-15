@@ -960,6 +960,24 @@
 				INFOPLIST_FILE = DemoCollectionOfMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"c++\"",
+					"-l\"iCarousel\"",
+					"-l\"pop\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Andy.DemoCollectionOfMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -975,6 +993,24 @@
 				INFOPLIST_FILE = DemoCollectionOfMine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"c++\"",
+					"-l\"iCarousel\"",
+					"-l\"pop\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-w",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Andy.DemoCollectionOfMine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

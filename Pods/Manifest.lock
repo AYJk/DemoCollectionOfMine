@@ -2,21 +2,18 @@ PODS:
   - iCarousel (1.8.2)
   - Masonry (0.6.3)
   - MBProgressHUD (0.9.2)
-  - MLSelectPhoto (1.2.1)
   - pop (1.0.8)
 
 DEPENDENCIES:
   - iCarousel (~> 1.8.2)
   - Masonry
   - MBProgressHUD (~> 0.9.1)
-  - MLSelectPhoto (~> 1.2.1)
   - pop (~> 1.0)
 
 SPEC CHECKSUMS:
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MLSelectPhoto: 27a6e6c77d1efcd718413e8c4093b2769a8f1f3e
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
 
 COCOAPODS: 0.39.0

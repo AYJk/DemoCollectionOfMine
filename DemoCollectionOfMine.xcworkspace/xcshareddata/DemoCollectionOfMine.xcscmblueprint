@@ -1,21 +1,21 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "09CD5A911347ED71CF88070B41F78CF1FBDBCBC5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : {
+    "09CD5A911347ED71CF88070B41F78CF1FBDBCBC5" : {
 
     },
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : {
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : 0,
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : 0
+    "09CD5A911347ED71CF88070B41F78CF1FBDBCBC5" : 0,
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3C285C1-5A01-4AA0-BB55-1C440D4330F0",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : "DemoCollectionOfMine\/",
-    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : ".."
+    "09CD5A911347ED71CF88070B41F78CF1FBDBCBC5" : "DemoCollectionOfMine\/",
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : ".."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "DemoCollectionOfMine",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -24,7 +24,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/DemoCollectionOfMine",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c2c21390-f2f6-4574-9f42-ef50a89d3d1c"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "09CD5A911347ED71CF88070B41F78CF1FBDBCBC5"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/DemoCollectionOfMine",
