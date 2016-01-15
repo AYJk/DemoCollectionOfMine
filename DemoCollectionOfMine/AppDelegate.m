@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SWRevealViewController.h"
+#import "CenterViewController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    LeftViewController *leftVC = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
+    CenterViewController *centerVC = [[CenterViewController alloc] initWithNibName:@"CenterViewController" bundle:nil];
+    RightViewController *rightVC = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
+    
+    UINavigationController *centerNC = [[UINavigationController alloc] initWithRootViewController:centerVC];
+    centerVC.viewControllerTitle =  @"Home";
+    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:leftVC frontViewController:centerNC];
+    
+    revealViewController.rightViewController = rightVC;
+    revealViewController.rearViewRevealWidth = 230;
+    [revealViewController setFrontViewPosition:FrontViewPositionLeft animated:YES];
+    
+    self.window.rootViewController = revealViewController;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

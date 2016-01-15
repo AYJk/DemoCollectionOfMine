@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : {
+
+    },
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : 0,
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "117AD2B7-B118-4A67-9E13-B9E00B34C1E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268" : "DemoCollectionOfMine\/",
+    "c2c21390-f2f6-4574-9f42-ef50a89d3d1c" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DemoCollectionOfMine",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DemoCollectionOfMine.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/DemoCollectionOfMine",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c2c21390-f2f6-4574-9f42-ef50a89d3d1c"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/DemoCollectionOfMine",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c2c21390-f2f6-4574-9f42-ef50a89d3d1c++6268"
+    }
+  ]
+}

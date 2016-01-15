@@ -1,0 +1,1442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06D5B441AB7AD2E400E4972F575C6045 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D8C88DD0C5F0EED41D0EF33918B1DF /* QuartzCore.framework */; };
+		086D1575D7C35376E63357269140C6E8 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53418EBECDEBCA463D9581C18BF775CD /* MLSelectPhotoPickerBrowserPhotoScrollView.m */; };
+		08E6E41E204405912C2B49EC0499007F /* MLSelectPhotoPickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A028C09415994F929C42F5D4D03213 /* MLSelectPhotoPickerCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0926F36F461339B6E201B8D739F6CCD5 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = D35E047053040DAF5E0D6D1137687961 /* POPAnimationRuntime.mm */; };
+		0CB65B85950C2352672F77F7D76F3325 /* MLSelectPhotoPickerAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E0034EB9E079EE2D8BF54717FFC9C5DD /* MLSelectPhotoPickerAssetsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D25F4BB2F69C90FA3FF3B2032FB268E /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05FD175D3B6FE07DAD932E9FFAB9A443 /* POPBasicAnimation.mm */; };
+		0F35F7880CA697C792258BDE668669C2 /* MLSelectPhotoNavigationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A25BAEB9659493BCAFA41B37F1E8F58 /* MLSelectPhotoNavigationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FFD26E177BC45152330EEE9C044D18A /* POPSpringSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B12C65933416B9013FF57E4E1C7A0B /* POPSpringSolver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = B28FBF1304F69F050F1720A23454B5C7 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1188B3C2B2841A631B6B1427AC42A56E /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 799D710F33DDC98AB8883FD0AA55CE8A /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1255C690CC962595E0241CFE5EC335D7 /* MLSelectPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4E18F186E5B1FF18A1C771BF4766B1 /* MLSelectPhotoBrowserViewController.m */; };
+		13C124C0692BA4EF26DD22EB4E96FE5B /* MLSelectPhotoPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E43E9F2EA8C9D1D5C11096C07658695 /* MLSelectPhotoPickerCollectionView.m */; };
+		19E2185302879E44D13E020B99C7BFCB /* MLSelectPhotoNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D446807B3B617FA837BF99DD991654 /* MLSelectPhotoNavigationViewController.m */; };
+		1AB25B8075D1F1257915956B978D91C3 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4266BEF0CD3150BA1704843BF3DE8CA5 /* POPCGUtils.mm */; };
+		1B2962F8A016FB46A601381075EBB19F /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = A999E3A9FFAD5AD99B1678CFE8502DB8 /* POPAnimation.mm */; };
+		1FB53E7487FA0D31954552D8E8720D9B /* POPAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F5C5B32FE849354F430ACC7CBD1C16 /* POPAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FBDBFDC9340C2A0DA6BFC796B46C545 /* UIImage+MLTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 448D37D70D7DE88A62C3403E00202DB9 /* UIImage+MLTint.m */; };
+		2211039B2F55A1C2A3BF8227F6CCBD85 /* POP.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D6805DBEDEC87543441CB8F88C6CF42 /* POP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 392F7663E85DD1A36C208737E980F05C /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2E91543B040CBD39D5051730335CDC /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		299A795E7DED36DA218F1EEC0E7C7955 /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 368CBE7E667A0577DA2F31E6BE21D5DE /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B29BA80FAA1F2D18C4ADB41641EF3DC /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AC3C36AD69CC134B4A0307ABF518C3 /* MLSelectPhotoPickerFooterCollectionReusableView.m */; };
+		2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC36EAE6E953CAE275E5480BC885E19 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2DECE22054FF3CFDD854536EE315CA2C /* POPAnimationTracerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E00A6BE0ABDA8D1A678D320BFC6BAFEE /* POPAnimationTracerInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		2FA45C20AB8452B9BBA4E43AD8F74FD4 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D34E6FCFB74E4D99A1AC62D9BD1895 /* MLSelectPhotoPickerBrowserPhotoImageView.m */; };
+		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C469BF74060C88761189B0C58615EA /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B2682B079671B0CDB9A6F155FAE4D9 /* MASConstraintMaker.m */; };
+		34E0A5C9671889223F485B3ABB001EA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		3510DF46420C9501395CFB1229CD3EFB /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9AD56580C00962D487201D2CABB4C /* POPCustomAnimation.mm */; };
+		354625D95D80D9026AA55E03574B1CDD /* MLSelectPhotoPickerDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA021079313C984F6E19E157A377535 /* MLSelectPhotoPickerDatas.m */; };
+		3554A5178CA108F3830C5778106E8FDB /* MLSelectPhotoPickerAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816DE92D470AA434EFD4AC8CF833C0D6 /* MLSelectPhotoPickerAssetsViewController.m */; };
+		35F45B1292EBB3B9BE98B5552D0DA943 /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = D6CE7CD08F675046F8872E59A17E4A5D /* POPGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3DCBCD70950B9B87412DAC7C74C39B /* MLSelectPhotoPickerDatas.h in Headers */ = {isa = PBXBuildFile; fileRef = E3B8309C29C296AD344E33F3F5EB03AC /* MLSelectPhotoPickerDatas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C9BB36A1DF7A3E587C3CB86CDE99904 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 511B586DA23AC0D7749F5590D22AFE51 /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3F4752DFE32EA376FF335F0B58DA1C /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4055699E78AC5889A4FBBD74950A448C /* MLSelectPhotoPickerFooterCollectionReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3CDBF5E2C91822E09B5FE8D30C4413 /* MLSelectPhotoPickerFooterCollectionReusableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 092A7883953B6A63F39B8E6E8ADB87C2 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F6F5F7E9A28DE527D268E34023DAF5 /* POPAnimatorPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = ADFE2F9A5A7EBA9A3B3BB8EDB151ADE9 /* POPAnimatorPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		440A4E260C08E1A77C5F4A02D6F13CE8 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACF7C5A9102B2DF775CFA9CD24ED5E5A /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		484BD2F22FF352F5E9556724B989114E /* POPAnimationRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B06A61407CD047B5D6761FD85E8DB0A /* POPAnimationRuntime.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C9FE9853235FAB79850311D3D8D8AE6 /* MLPhotoPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 631875CF16CC9210073D826FA7B5350D /* MLPhotoPickerImageView.m */; };
+		5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 941321FA2CE85A2CAEB57827131452FC /* NSArray+MASAdditions.m */; };
+		55C50A086388C4D04A3C507B216A46A8 /* POPAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2345710F8C62E9B625FA0AFCE8C0645A /* POPAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C0988542FCADBFDDCE212192821925A /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 045211F83BAF738B6F2E378AC73B3369 /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B8CA9D8444F452F828F49054AEDCECCC /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EB8AE7824AD45CA8983A980A6141AF7 /* MLSelectPhotoPickerGroupTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 810E2A23B5E36AE5631FCCE42113B9AD /* MLSelectPhotoPickerGroupTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB365F015B746C48F91AC68ED7ADCA5 /* MLSelectPhotoPickerBrowserPhotoView.h in Headers */ = {isa = PBXBuildFile; fileRef = E7BF3118964BCE21981708E13D53BF36 /* MLSelectPhotoPickerBrowserPhotoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		603AB223DC2FCFF8A17B5445DDFD8829 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 833AFAD69597005A751E7400C261858E /* MLSelectPhotoPickerCollectionViewCell.m */; };
+		6051040174594C69599F734C91C93ED7 /* POPAnimationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6EC14F7EBB1DF25479ECB2E4EE6E5C /* POPAnimationEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		628B71C957487AD0173F6E410363BCC9 /* MLSelectPhotoPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 798A2B3B3EEF5CFDEBA690195B7A2C2B /* MLSelectPhotoPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6439AFFC00884E03B031B7BA612725F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		64747241715572624C10E0705F3957F7 /* POPAnimationEventInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2B54208EE1E8CF84ED994FA50586E8 /* POPAnimationEventInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6611CE49ED61897D58BEED96F03FD309 /* MLSelectPhoto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE7A074FC61EC8C432F308658E328FE /* MLSelectPhoto-dummy.m */; };
+		6B20F7DFEC99D6C982641F1CD79E3799 /* UIView+MLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F5073B61FCD4E9D7F0409BA98D216B /* UIView+MLExtension.m */; };
+		6DCF67BAA5B07DDA9B62A370F2B93694 /* MLSelectPhotoPickerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 79DD15C8D405672DEA937A6D53813970 /* MLSelectPhotoPickerGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9F3236AFF9918002ECB6FECEC5F640 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = B115B7A01041660E95F37A56F659A04A /* POPGeometry.mm */; };
+		6FD9BA0C5921C2C6F156D732974B4A20 /* FloatConversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D9723604DEF0BCBC3DA893DAD2B3F91 /* FloatConversion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		70C4C9E4251810D838B88F4FD8B0E7D2 /* POPAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AB02CB1F25B60987C5A023DB33B7192 /* POPAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F17DE659B4735AA8A008B604AA11AF9 /* CoreGraphics.framework */; };
+		7177B8B17F79D9CABCEEC7B089898FA3 /* POPSpringAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB0555F28678D01C7D3574B71673B7C /* POPSpringAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71A70D647BEBC13B524BDAF59081A5F1 /* MLSelectPhotoPickerCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D76154556A4DDD9B2DCD25CD30A6E54 /* MLSelectPhotoPickerCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72D6D5B1CEABBFC1206FA6E2F39BC7D5 /* POPMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E498F76203C18FC2734D049C62FD1ED /* POPMath.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75661AC9E21BD8F2485F7FED3C4EDF09 /* MLSelectPhotoPickerBrowserPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BF34E1BB191FD0A9EFA8EE2BFF8595 /* MLSelectPhotoPickerBrowserPhotoView.m */; };
+		7646067EF8D1C79DBBE07F8E081278DC /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 292019148B99224296ADFA2202B4A72C /* POPAnimationEvent.mm */; };
+		774E88ABC6984D6EBCFC0BC0FA0C0A08 /* MLSelectPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1043FDA31CF21A08C55E12A79D201 /* MLSelectPhotoPickerViewController.m */; };
+		7D96D5109C9E69277ABD2DF9AB1D2A53 /* POPCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E353A17E2B6CD89A1E0E16D6E55021D5 /* POPCGUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FB9057F27DF88F916A32C422487DB9F /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = ACC8C807B208C7D9ECD4B89BDFF7C9FB /* POPVector.mm */; };
+		81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A167E82A4C0DB3754FC76AB299FB6574 /* View+MASAdditions.m */; };
+		81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCEEF61AE97995FC791ABCC96BD36E06 /* Masonry-dummy.m */; };
+		82D18F79CDC4BAF9BE61C4C26C275565 /* POPDecayAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F3DF16AB582393246283A4C060562B /* POPDecayAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBC4BBD35FE970CFFA0529FDC5E05C /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		862EF5655D90F2B7C27F475AAFB07F6D /* UIImage+MLTint.h in Headers */ = {isa = PBXBuildFile; fileRef = A77F0DEE5AF4ABEBAB5B3669CC85683F /* UIImage+MLTint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4A40CEF8E0544C6687C89440BAD456 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7CCB95C6DCCFB67A5EE2FB8FB8D21F9 /* TransformationMatrix.cpp */; };
+		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = FC26FC7D7623F1681A03CEE8E8B91B9F /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9254369A85452BCFCA33E22E4DF0BCF4 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A745157ED9CDAE6899DD4FF6C8895AA0 /* POPAnimationTracer.mm */; };
+		929C22C069697C42052E75D0CE0A5193 /* MLPhotoPickerImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1533573AF232647E07331A2C84C5F1 /* MLPhotoPickerImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98EB11D0F45F0C31506C4087FD9F5082 /* MLSelectPhotoPickerBrowserPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD10761AD8A668D31BC1173DD2E8AF1 /* MLSelectPhotoPickerBrowserPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FCB3B7EC5810CA261E0EEEA4470729 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99EBA5A2843B551745E6E357D8CC3921 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A5436E9C391D175BA2EC00B7BFBF5B /* UIKit.framework */; };
+		9C0868A1EF5AE1C61DECA56A39E853E9 /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = F8056D1F4DF070A80A9ADD989798954D /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E0692143A04579DB89208575000538B /* POPBasicAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C2BCCB41A608219F96EE9A7E4D9F1EC /* POPBasicAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1A50FBC0A00E3459B05F9D4B10FD93D /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAED4CDB9686571310023E30DD4B77 /* POPAnimatableProperty.mm */; };
+		A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E906A6DEF2821F249149FDAAEF8416 /* MASViewAttribute.m */; };
+		A570BC544D0570C3B63D36EACAA55212 /* POPPropertyAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3306DB8EB72722F2CAB8DE1600A2ED22 /* POPPropertyAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC1F9A3143451BD4DEECAD1657C4029 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A7B45E21C9BF56E695BADE82A735EE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72D41109B234325104FB24FCD5DD52D /* AssetsLibrary.framework */; };
+		AE0C268654F132656F4C8405F11CC8A8 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F309C98209206DDA34B3597873A5D6B /* POPPropertyAnimation.mm */; };
+		AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BD6F96E782E76283A60E1FA7187C25 /* ViewController+MASAdditions.m */; };
+		AFC0D30A47D900FDD9B3D219B3FA88EE /* MLSelectPhotoAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = B3123D45CF7C717A90F5467DB08506A5 /* MLSelectPhotoAssets.m */; };
+		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D73AA5BA06700D7D6387DE8C2B2B40DB /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73AAB4985B34F00B647766C081926CB /* TransformationMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EDB8326804F11DC7593E0C8BB10F079 /* TransformationMatrix.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B75AEB918613E8E9D33AE352F0C5CE50 /* MLSelectPhotoPickerGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1B0915B172D5B507E40E8A351C6154 /* MLSelectPhotoPickerGroupViewController.m */; };
+		BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 867626087A65405F062208D0B01F1571 /* MASCompositeConstraint.m */; };
+		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D5905AB29E16C4EFD6805EA4367148 /* MASLayoutConstraint.m */; };
+		BDE0CD9F4072532CC74FD446D8D8EE2D /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 139FCC3B586990D549BF5FF32536DCF3 /* POPSpringAnimation.mm */; };
+		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CA7899357E88D2250B41BC6CAF403B /* MASConstraint.m */; };
+		BEE7754A2C0009AD8CA652E96CEA0088 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = F68D327BCBD51BD396D88361E6EEC075 /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0829F2C9D67B624DF0AA4DBF9133964 /* MLSelectPhotoPickerBrowserPhotoImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A656DA0BE0810DBBD1834A62B5B14AD1 /* MLSelectPhotoPickerBrowserPhotoImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1CACE3C7E818EEC6D085E118749A01E /* MLSelectPhotoPickerBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = D8789046F05BC21ABE43B8A7F46F3FE0 /* MLSelectPhotoPickerBrowserPhoto.m */; };
+		C25951FA088D7B91461FD94E9ADCB765 /* UIView+MLExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB3967088086EBD166E5D464340FA68 /* UIView+MLExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C66B88889BD74F179C98799092F1DD8E /* POPCustomAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 47AB75C16A122167EC9C12BA787970CA /* POPCustomAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7D3FE29ACEB5F42FA0A066927B655D /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8879E3AA393BBD3AE9837AB0591A0C4 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 942AEA24B67523E9977DFD4E236A3009 /* POPLayerExtras.mm */; };
+		C98096059D2499144E6E6AFDD78C79A9 /* MLSelectPhotoCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C946BEFED205E67244FF3CE689E0BB7 /* MLSelectPhotoCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBE2242A28EFBDCE7EB1DB8F1A1718BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		CFFC346E304C37E16885A90ED220D8E2 /* MLSelectPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = B14BC854FE86F04A2A84486E3D75DF1F /* MLSelectPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D17083E28E55B89133B3230D48DD3C7D /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = B94F7271423E682F23287EB5EE0C874D /* POPAnimationExtras.mm */; };
+		D1C71BA95A6A6D684A6791717A2229C9 /* MLSelectPhotoPickerGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B3326F762149AD1002ECDB587632F8 /* MLSelectPhotoPickerGroupTableViewCell.m */; };
+		D2BCABD9A082F13B04E802CC0BFD1F66 /* MLSelectPhotoPickerGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BC88B7E1B6825F772EAA252083A344 /* MLSelectPhotoPickerGroupViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9151DC7A3C22FD7817A67E6AC671512C /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		DA4EF9D22CD33B442B600DA6C27526C5 /* POPBasicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B4E9290A9C19A342667F0157C0A00D /* POPBasicAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAB62FB2A9AD7D60F975057103783C8D /* MLSelectPhotoAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A99380016968F3C0F0F3A6C4DE43B6 /* MLSelectPhotoAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 34230F87D5AD936531F0B1BF393A4F69 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD98C961747DB981D6B1ABCF8630A10 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1FC935063D22347C715A3A3C64C1528 /* POPAnimator.mm */; };
+		E2CF926B7C7A046BE2C0C9D267D6675F /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4E414C97A79C8DEE53B045FD346D4D49 /* POPMath.mm */; };
+		E6286B77F26C76044F2D0FD933F88081 /* POPAnimatableProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = D333B556E29B189A3876533FBE8AA5C8 /* POPAnimatableProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E95102ADAE78879FCAC86D43C9B0CC72 /* MASViewConstraint.m */; };
+		E79BABAD72E3CC8067CAD20BBE830CC2 /* UnitBezier.h in Headers */ = {isa = PBXBuildFile; fileRef = F4293DEE5752E56E9DA8E8B002681090 /* UnitBezier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9B95D77AA4570AE7B1DBF3C70AB2D4 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EDF5CB0E5E3255439DB58E26C79C3A4 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC0D130A5342EEBC42F570DFEA591B2 /* MLSelectPhotoBrowserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7417021839CE82C3C9DB9BEAB8A2117 /* MLSelectPhotoBrowserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED85609FEA43BB6E7135AEF3C2858D4 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = F508A47C76971EB976E464485E8701AC /* POPVector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F14CDCB600D52BB74BA97DBFA31983F2 /* MLSelectPhotoPickerBrowserPhotoScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B45C1F8C01CF023FDDF4850212999A64 /* MLSelectPhotoPickerBrowserPhotoScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F45736DD67E8CE01FC509390D0CBC869 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EC39FA1CEB24D8DAE320DF7FC1F2E9 /* POPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5D25E9EE3DFFE3D9F4A4C192C623E4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */; };
+		F730C4559FE98864F5C61FE516267246 /* pop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2E479ACEAA0E31FAA8F2005206D593 /* pop-dummy.m */; };
+		F9E5DDE95B7A1697DD0569D566474B14 /* POPSpringAnimationInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF1C9777DB9A7F52F265C9B28DC4411 /* POPSpringAnimationInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 868E3B49A7BED809BFBC678870C9BD30 /* iCarousel-dummy.m */; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24839BBAA212F095016B52431E911459 /* MBProgressHUD-dummy.m */; };
+		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C974F0361D91E35407DD321C029CD76D /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEA8AD9414BAB9CBC351940DF3D36A72 /* MLSelectPhotoPickerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BC1CF7C5FFBD820031E491AF56EEB7 /* MLSelectPhotoPickerGroup.m */; };
+		FF137EF3E4C6675A4901E86AF4596925 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA47E52853428A913F3F12437D5CD86E /* POPDecayAnimation.mm */; };
+		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A9772D3BFA38A0DEE2BD30B7A1BA45 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54D1B5DA0231AD5905515E3D3E4A8E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD71773A66F03DCB0D5B836DDF5440C;
+			remoteInfo = pop;
+		};
+		7095C7ED6B63BA879A23B9A8AA278EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9494390523250106847516AB47E5F9FF;
+			remoteInfo = iCarousel;
+		};
+		72FDF8807541333C62DA17BCFEB4F085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A73E11256190D4AA0B7DA6C4E4F1A39;
+			remoteInfo = MLSelectPhoto;
+		};
+		92210368FE64FB378E71B2F6C9C449E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
+		};
+		B6EF7E64BFC653EE2EADB0B357920671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030E63CB7C2C5AA4E5D2997904CA6EE0 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		045211F83BAF738B6F2E378AC73B3369 /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
+		05FD175D3B6FE07DAD932E9FFAB9A443 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		092A7883953B6A63F39B8E6E8ADB87C2 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		09DB6F70F7A59BCAE6B3F0CB0046AA69 /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
+		0C31262E2E72B5F4D346772F4A9DF953 /* MLSelectPhoto.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MLSelectPhoto.bundle; path = MLSelectPhoto/MLSelectPhoto.bundle; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		12A99380016968F3C0F0F3A6C4DE43B6 /* MLSelectPhotoAssets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoAssets.h; path = MLSelectPhoto/Classes/Models/MLSelectPhotoAssets.h; sourceTree = "<group>"; };
+		133FCF2D04A65CF144F33D823A8BE267 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		139FCC3B586990D549BF5FF32536DCF3 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		18A79C53116556A07BD6CBDFF70E3CC1 /* pop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.xcconfig; sourceTree = "<group>"; };
+		18D8C88DD0C5F0EED41D0EF33918B1DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1AB02CB1F25B60987C5A023DB33B7192 /* POPAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimation.h; path = pop/POPAnimation.h; sourceTree = "<group>"; };
+		1BBBC4BBD35FE970CFFA0529FDC5E05C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1EA021079313C984F6E19E157A377535 /* MLSelectPhotoPickerDatas.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerDatas.m; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerDatas.m; sourceTree = "<group>"; };
+		2345710F8C62E9B625FA0AFCE8C0645A /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
+		24839BBAA212F095016B52431E911459 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		24FA27EF24A6981D7DC58FFBDBA3D329 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
+		25B2682B079671B0CDB9A6F155FAE4D9 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		292019148B99224296ADFA2202B4A72C /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		2A4B70466C70E50ABA0FC03E9C9A62ED /* MLSelectPhoto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLSelectPhoto.xcconfig; sourceTree = "<group>"; };
+		2D6805DBEDEC87543441CB8F88C6CF42 /* POP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POP.h; path = pop/POP.h; sourceTree = "<group>"; };
+		2FC1F9A3143451BD4DEECAD1657C4029 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2FE93D8F0A8DCC1619411BF782FD573A /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
+		3306DB8EB72722F2CAB8DE1600A2ED22 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimationInternal.h; path = pop/POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
+		34230F87D5AD936531F0B1BF393A4F69 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		368CBE7E667A0577DA2F31E6BE21D5DE /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38CA7899357E88D2250B41BC6CAF403B /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		392F7663E85DD1A36C208737E980F05C /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		3D76154556A4DDD9B2DCD25CD30A6E54 /* MLSelectPhotoPickerCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerCollectionViewCell.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		3DF1C9777DB9A7F52F265C9B28DC4411 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimationInternal.h; path = pop/POPSpringAnimationInternal.h; sourceTree = "<group>"; };
+		3EDF5CB0E5E3255439DB58E26C79C3A4 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		3F17DE659B4735AA8A008B604AA11AF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4266BEF0CD3150BA1704843BF3DE8CA5 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		42D5905AB29E16C4EFD6805EA4367148 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		448D37D70D7DE88A62C3403E00202DB9 /* UIImage+MLTint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MLTint.m"; path = "MLSelectPhoto/Classes/Category/UIImage+MLTint.m"; sourceTree = "<group>"; };
+		47AB75C16A122167EC9C12BA787970CA /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
+		47D34E6FCFB74E4D99A1AC62D9BD1895 /* MLSelectPhotoPickerBrowserPhotoImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerBrowserPhotoImageView.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoImageView.m; sourceTree = "<group>"; };
+		490F0EEBFEF780A7C5946BA6F358612A /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		49A028C09415994F929C42F5D4D03213 /* MLSelectPhotoPickerCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerCollectionView.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerCollectionView.h; sourceTree = "<group>"; };
+		4A25BAEB9659493BCAFA41B37F1E8F58 /* MLSelectPhotoNavigationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoNavigationViewController.h; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoNavigationViewController.h; sourceTree = "<group>"; };
+		4CFAED4CDB9686571310023E30DD4B77 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		4D9723604DEF0BCBC3DA893DAD2B3F91 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
+		4E414C97A79C8DEE53B045FD346D4D49 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		4E43E9F2EA8C9D1D5C11096C07658695 /* MLSelectPhotoPickerCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerCollectionView.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerCollectionView.m; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		511B586DA23AC0D7749F5590D22AFE51 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		52BC1CF7C5FFBD820031E491AF56EEB7 /* MLSelectPhotoPickerGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerGroup.m; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerGroup.m; sourceTree = "<group>"; };
+		53418EBECDEBCA463D9581C18BF775CD /* MLSelectPhotoPickerBrowserPhotoScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerBrowserPhotoScrollView.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoScrollView.m; sourceTree = "<group>"; };
+		54D446807B3B617FA837BF99DD991654 /* MLSelectPhotoNavigationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoNavigationViewController.m; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoNavigationViewController.m; sourceTree = "<group>"; };
+		54D68E9592385EEE6AF3C195BFA23BE4 /* libMLSelectPhoto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMLSelectPhoto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56FCB3B7EC5810CA261E0EEEA4470729 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5B9B95D77AA4570AE7B1DBF3C70AB2D4 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		5C2BCCB41A608219F96EE9A7E4D9F1EC /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimationInternal.h; path = pop/POPBasicAnimationInternal.h; sourceTree = "<group>"; };
+		5C3F4752DFE32EA376FF335F0B58DA1C /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		5CD10761AD8A668D31BC1173DD2E8AF1 /* MLSelectPhotoPickerBrowserPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerBrowserPhoto.h; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerBrowserPhoto.h; sourceTree = "<group>"; };
+		5EDB8326804F11DC7593E0C8BB10F079 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
+		5F4E18F186E5B1FF18A1C771BF4766B1 /* MLSelectPhotoBrowserViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoBrowserViewController.m; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		631875CF16CC9210073D826FA7B5350D /* MLPhotoPickerImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLPhotoPickerImageView.m; path = MLSelectPhoto/Classes/Views/MLPhotoPickerImageView.m; sourceTree = "<group>"; };
+		65B4E9290A9C19A342667F0157C0A00D /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
+		67BC88B7E1B6825F772EAA252083A344 /* MLSelectPhotoPickerGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerGroupViewController.h; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerGroupViewController.h; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6C2E479ACEAA0E31FAA8F2005206D593 /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
+		6C946BEFED205E67244FF3CE689E0BB7 /* MLSelectPhotoCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoCommon.h; path = MLSelectPhoto/Classes/MLSelectPhotoCommon.h; sourceTree = "<group>"; };
+		6F309C98209206DDA34B3597873A5D6B /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		728CCD656E73A6F91E06672F7B0B8A0D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AC3C36AD69CC134B4A0307ABF518C3 /* MLSelectPhotoPickerFooterCollectionReusableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerFooterCollectionReusableView.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerFooterCollectionReusableView.m; sourceTree = "<group>"; };
+		77A5436E9C391D175BA2EC00B7BFBF5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		798A2B3B3EEF5CFDEBA690195B7A2C2B /* MLSelectPhotoPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerViewController.h; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerViewController.h; sourceTree = "<group>"; };
+		799D710F33DDC98AB8883FD0AA55CE8A /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
+		79DD15C8D405672DEA937A6D53813970 /* MLSelectPhotoPickerGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerGroup.h; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerGroup.h; sourceTree = "<group>"; };
+		7B2E91543B040CBD39D5051730335CDC /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		7D4D093158423FC18F9E9D05428BA2E6 /* libiCarousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiCarousel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		810E2A23B5E36AE5631FCCE42113B9AD /* MLSelectPhotoPickerGroupTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerGroupTableViewCell.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerGroupTableViewCell.h; sourceTree = "<group>"; };
+		816DE92D470AA434EFD4AC8CF833C0D6 /* MLSelectPhotoPickerAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerAssetsViewController.m; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerAssetsViewController.m; sourceTree = "<group>"; };
+		833AFAD69597005A751E7400C261858E /* MLSelectPhotoPickerCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerCollectionViewCell.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		84B12C65933416B9013FF57E4E1C7A0B /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
+		84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		85BF34E1BB191FD0A9EFA8EE2BFF8595 /* MLSelectPhotoPickerBrowserPhotoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerBrowserPhotoView.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoView.m; sourceTree = "<group>"; };
+		8669815014042FF9A415E059F8A50C7C /* MLSelectPhoto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSelectPhoto-prefix.pch"; sourceTree = "<group>"; };
+		867626087A65405F062208D0B01F1571 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		868E3B49A7BED809BFBC678870C9BD30 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		87C469BF74060C88761189B0C58615EA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		90E906A6DEF2821F249149FDAAEF8416 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		9151DC7A3C22FD7817A67E6AC671512C /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		93B1043FDA31CF21A08C55E12A79D201 /* MLSelectPhotoPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerViewController.m; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerViewController.m; sourceTree = "<group>"; };
+		941321FA2CE85A2CAEB57827131452FC /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		942AEA24B67523E9977DFD4E236A3009 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		9A3CDBF5E2C91822E09B5FE8D30C4413 /* MLSelectPhotoPickerFooterCollectionReusableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerFooterCollectionReusableView.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerFooterCollectionReusableView.h; sourceTree = "<group>"; };
+		9B06A61407CD047B5D6761FD85E8DB0A /* POPAnimationRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationRuntime.h; path = pop/POPAnimationRuntime.h; sourceTree = "<group>"; };
+		9E498F76203C18FC2734D049C62FD1ED /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		9ED9AD56580C00962D487201D2CABB4C /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		A0EC39FA1CEB24D8DAE320DF7FC1F2E9 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		A167E82A4C0DB3754FC76AB299FB6574 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A2BD6F96E782E76283A60E1FA7187C25 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		A656DA0BE0810DBBD1834A62B5B14AD1 /* MLSelectPhotoPickerBrowserPhotoImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerBrowserPhotoImageView.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoImageView.h; sourceTree = "<group>"; };
+		A6B3326F762149AD1002ECDB587632F8 /* MLSelectPhotoPickerGroupTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerGroupTableViewCell.m; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerGroupTableViewCell.m; sourceTree = "<group>"; };
+		A72D41109B234325104FB24FCD5DD52D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		A745157ED9CDAE6899DD4FF6C8895AA0 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		A77F0DEE5AF4ABEBAB5B3669CC85683F /* UIImage+MLTint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MLTint.h"; path = "MLSelectPhoto/Classes/Category/UIImage+MLTint.h"; sourceTree = "<group>"; };
+		A8F5073B61FCD4E9D7F0409BA98D216B /* UIView+MLExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MLExtension.m"; path = "MLSelectPhoto/Classes/Category/UIView+MLExtension.m"; sourceTree = "<group>"; };
+		A999E3A9FFAD5AD99B1678CFE8502DB8 /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		AA2B54208EE1E8CF84ED994FA50586E8 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEventInternal.h; path = pop/POPAnimationEventInternal.h; sourceTree = "<group>"; };
+		AA47E52853428A913F3F12437D5CD86E /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		AA7D3FE29ACEB5F42FA0A066927B655D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		ACC8C807B208C7D9ECD4B89BDFF7C9FB /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		ACF7C5A9102B2DF775CFA9CD24ED5E5A /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		ADFE2F9A5A7EBA9A3B3BB8EDB151ADE9 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatorPrivate.h; path = pop/POPAnimatorPrivate.h; sourceTree = "<group>"; };
+		B115B7A01041660E95F37A56F659A04A /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		B13533A450B78874ADBC2D285D170B0C /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B14BC854FE86F04A2A84486E3D75DF1F /* MLSelectPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhoto.h; path = MLSelectPhoto/Classes/MLSelectPhoto.h; sourceTree = "<group>"; };
+		B28FBF1304F69F050F1720A23454B5C7 /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		B3123D45CF7C717A90F5467DB08506A5 /* MLSelectPhotoAssets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoAssets.m; path = MLSelectPhoto/Classes/Models/MLSelectPhotoAssets.m; sourceTree = "<group>"; };
+		B45C1F8C01CF023FDDF4850212999A64 /* MLSelectPhotoPickerBrowserPhotoScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerBrowserPhotoScrollView.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoScrollView.h; sourceTree = "<group>"; };
+		B7777B5A076BD1F6BF2A61C85F486FB7 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CA9D8444F452F828F49054AEDCECCC /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B94F7271423E682F23287EB5EE0C874D /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BAC36EAE6E953CAE275E5480BC885E19 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		BEB0555F28678D01C7D3574B71673B7C /* POPSpringAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringAnimation.h; path = pop/POPSpringAnimation.h; sourceTree = "<group>"; };
+		BF6EC14F7EBB1DF25479ECB2E4EE6E5C /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
+		C974F0361D91E35407DD321C029CD76D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		CAE7A074FC61EC8C432F308658E328FE /* MLSelectPhoto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLSelectPhoto-dummy.m"; sourceTree = "<group>"; };
+		CE42459A3AA221F26F75B6B56C1CE7B4 /* libpop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D333B556E29B189A3876533FBE8AA5C8 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
+		D35E047053040DAF5E0D6D1137687961 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		D6CE7CD08F675046F8872E59A17E4A5D /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
+		D73AA5BA06700D7D6387DE8C2B2B40DB /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D7F5C5B32FE849354F430ACC7CBD1C16 /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
+		D8789046F05BC21ABE43B8A7F46F3FE0 /* MLSelectPhotoPickerBrowserPhoto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerBrowserPhoto.m; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerBrowserPhoto.m; sourceTree = "<group>"; };
+		DAB3967088086EBD166E5D464340FA68 /* UIView+MLExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MLExtension.h"; path = "MLSelectPhoto/Classes/Category/UIView+MLExtension.h"; sourceTree = "<group>"; };
+		DCEEF61AE97995FC791ABCC96BD36E06 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		E0034EB9E079EE2D8BF54717FFC9C5DD /* MLSelectPhotoPickerAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerAssetsViewController.h; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerAssetsViewController.h; sourceTree = "<group>"; };
+		E00A6BE0ABDA8D1A678D320BFC6BAFEE /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
+		E353A17E2B6CD89A1E0E16D6E55021D5 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
+		E3B8309C29C296AD344E33F3F5EB03AC /* MLSelectPhotoPickerDatas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerDatas.h; path = MLSelectPhoto/Classes/Models/MLSelectPhotoPickerDatas.h; sourceTree = "<group>"; };
+		E7417021839CE82C3C9DB9BEAB8A2117 /* MLSelectPhotoBrowserViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoBrowserViewController.h; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		E7BF3118964BCE21981708E13D53BF36 /* MLSelectPhotoPickerBrowserPhotoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSelectPhotoPickerBrowserPhotoView.h; path = MLSelectPhoto/Classes/Views/MLSelectPhotoPickerBrowserPhotoView.h; sourceTree = "<group>"; };
+		E95102ADAE78879FCAC86D43C9B0CC72 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		E9A9772D3BFA38A0DEE2BD30B7A1BA45 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		EAB4B5729FD7BF51B6C336BEFB90BC33 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		EC1533573AF232647E07331A2C84C5F1 /* MLPhotoPickerImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLPhotoPickerImageView.h; path = MLSelectPhoto/Classes/Views/MLPhotoPickerImageView.h; sourceTree = "<group>"; };
+		EF1B0915B172D5B507E40E8A351C6154 /* MLSelectPhotoPickerGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSelectPhotoPickerGroupViewController.m; path = MLSelectPhoto/Classes/ViewControllers/MLSelectPhotoPickerGroupViewController.m; sourceTree = "<group>"; };
+		F0F3DF16AB582393246283A4C060562B /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimationInternal.h; path = pop/POPDecayAnimationInternal.h; sourceTree = "<group>"; };
+		F1FC935063D22347C715A3A3C64C1528 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		F4293DEE5752E56E9DA8E8B002681090 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
+		F508A47C76971EB976E464485E8701AC /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
+		F68D327BCBD51BD396D88361E6EEC075 /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		F7CCB95C6DCCFB67A5EE2FB8FB8D21F9 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		F8056D1F4DF070A80A9ADD989798954D /* POPAnimationTracer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracer.h; path = pop/POPAnimationTracer.h; sourceTree = "<group>"; };
+		FC26FC7D7623F1681A03CEE8E8B91B9F /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255D3CB4F87BB5035DFC97EFE498197E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E0A5C9671889223F485B3ABB001EA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3535D1B413DB06AB3EE4FFBA91161C23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A7B45E21C9BF56E695BADE82A735EE /* AssetsLibrary.framework in Frameworks */,
+				6439AFFC00884E03B031B7BA612725F7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A91BD5D9F219640D4FCC273086A0AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D25E9EE3DFFE3D9F4A4C192C623E4C /* Foundation.framework in Frameworks */,
+				06D5B441AB7AD2E400E4972F575C6045 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BAB8824029F369A5FE1E089C5238E88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE2242A28EFBDCE7EB1DB8F1A1718BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */,
+				2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */,
+				9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0F8B08C445FFB59E70BBCB3CB10E844A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C31262E2E72B5F4D346772F4A9DF953 /* MLSelectPhoto.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		178A3FD538D87D7B0959ED09D563E41E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A68176CB053C2050A02A2C5E3901533D /* iCarousel */,
+				F03B441E6ED210258DF6EE0754B6722A /* Masonry */,
+				BD4BCA1DC92ABD23B21AAE383D8A646B /* MBProgressHUD */,
+				E53380C61C13E7A3BB3FFB6CB0460FAB /* MLSelectPhoto */,
+				A1870BA8839F5271652211C17C48D0E7 /* pop */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2813FC6EA04278CF945928AAD5E7464 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33431829B39AFA089509B52BF636F218 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FE93D8F0A8DCC1619411BF782FD573A /* iCarousel.xcconfig */,
+				868E3B49A7BED809BFBC678870C9BD30 /* iCarousel-dummy.m */,
+				09DB6F70F7A59BCAE6B3F0CB0046AA69 /* iCarousel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iCarousel";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				178A3FD538D87D7B0959ED09D563E41E /* Pods */,
+				CFC6E019D446D855F1CC4F031046875A /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96A4D88F254C3439FCBA1BBD5AB21283 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				030E63CB7C2C5AA4E5D2997904CA6EE0 /* Masonry.xcconfig */,
+				DCEEF61AE97995FC791ABCC96BD36E06 /* Masonry-dummy.m */,
+				133FCF2D04A65CF144F33D823A8BE267 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		A052C72F170029D28ED029B2BF067173 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAB4B5729FD7BF51B6C336BEFB90BC33 /* MBProgressHUD.xcconfig */,
+				24839BBAA212F095016B52431E911459 /* MBProgressHUD-dummy.m */,
+				490F0EEBFEF780A7C5946BA6F358612A /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		A1870BA8839F5271652211C17C48D0E7 /* pop */ = {
+			isa = PBXGroup;
+			children = (
+				4D9723604DEF0BCBC3DA893DAD2B3F91 /* FloatConversion.h */,
+				2D6805DBEDEC87543441CB8F88C6CF42 /* POP.h */,
+				F68D327BCBD51BD396D88361E6EEC075 /* POPAction.h */,
+				D333B556E29B189A3876533FBE8AA5C8 /* POPAnimatableProperty.h */,
+				4CFAED4CDB9686571310023E30DD4B77 /* POPAnimatableProperty.mm */,
+				1AB02CB1F25B60987C5A023DB33B7192 /* POPAnimation.h */,
+				A999E3A9FFAD5AD99B1678CFE8502DB8 /* POPAnimation.mm */,
+				BF6EC14F7EBB1DF25479ECB2E4EE6E5C /* POPAnimationEvent.h */,
+				292019148B99224296ADFA2202B4A72C /* POPAnimationEvent.mm */,
+				AA2B54208EE1E8CF84ED994FA50586E8 /* POPAnimationEventInternal.h */,
+				368CBE7E667A0577DA2F31E6BE21D5DE /* POPAnimationExtras.h */,
+				B94F7271423E682F23287EB5EE0C874D /* POPAnimationExtras.mm */,
+				2345710F8C62E9B625FA0AFCE8C0645A /* POPAnimationInternal.h */,
+				ACF7C5A9102B2DF775CFA9CD24ED5E5A /* POPAnimationPrivate.h */,
+				9B06A61407CD047B5D6761FD85E8DB0A /* POPAnimationRuntime.h */,
+				D35E047053040DAF5E0D6D1137687961 /* POPAnimationRuntime.mm */,
+				F8056D1F4DF070A80A9ADD989798954D /* POPAnimationTracer.h */,
+				A745157ED9CDAE6899DD4FF6C8895AA0 /* POPAnimationTracer.mm */,
+				E00A6BE0ABDA8D1A678D320BFC6BAFEE /* POPAnimationTracerInternal.h */,
+				D7F5C5B32FE849354F430ACC7CBD1C16 /* POPAnimator.h */,
+				F1FC935063D22347C715A3A3C64C1528 /* POPAnimator.mm */,
+				ADFE2F9A5A7EBA9A3B3BB8EDB151ADE9 /* POPAnimatorPrivate.h */,
+				65B4E9290A9C19A342667F0157C0A00D /* POPBasicAnimation.h */,
+				05FD175D3B6FE07DAD932E9FFAB9A443 /* POPBasicAnimation.mm */,
+				5C2BCCB41A608219F96EE9A7E4D9F1EC /* POPBasicAnimationInternal.h */,
+				E353A17E2B6CD89A1E0E16D6E55021D5 /* POPCGUtils.h */,
+				4266BEF0CD3150BA1704843BF3DE8CA5 /* POPCGUtils.mm */,
+				47AB75C16A122167EC9C12BA787970CA /* POPCustomAnimation.h */,
+				9ED9AD56580C00962D487201D2CABB4C /* POPCustomAnimation.mm */,
+				045211F83BAF738B6F2E378AC73B3369 /* POPDecayAnimation.h */,
+				AA47E52853428A913F3F12437D5CD86E /* POPDecayAnimation.mm */,
+				F0F3DF16AB582393246283A4C060562B /* POPDecayAnimationInternal.h */,
+				A0EC39FA1CEB24D8DAE320DF7FC1F2E9 /* POPDefines.h */,
+				D6CE7CD08F675046F8872E59A17E4A5D /* POPGeometry.h */,
+				B115B7A01041660E95F37A56F659A04A /* POPGeometry.mm */,
+				799D710F33DDC98AB8883FD0AA55CE8A /* POPLayerExtras.h */,
+				942AEA24B67523E9977DFD4E236A3009 /* POPLayerExtras.mm */,
+				9E498F76203C18FC2734D049C62FD1ED /* POPMath.h */,
+				4E414C97A79C8DEE53B045FD346D4D49 /* POPMath.mm */,
+				511B586DA23AC0D7749F5590D22AFE51 /* POPPropertyAnimation.h */,
+				6F309C98209206DDA34B3597873A5D6B /* POPPropertyAnimation.mm */,
+				3306DB8EB72722F2CAB8DE1600A2ED22 /* POPPropertyAnimationInternal.h */,
+				BEB0555F28678D01C7D3574B71673B7C /* POPSpringAnimation.h */,
+				139FCC3B586990D549BF5FF32536DCF3 /* POPSpringAnimation.mm */,
+				3DF1C9777DB9A7F52F265C9B28DC4411 /* POPSpringAnimationInternal.h */,
+				84B12C65933416B9013FF57E4E1C7A0B /* POPSpringSolver.h */,
+				F508A47C76971EB976E464485E8701AC /* POPVector.h */,
+				ACC8C807B208C7D9ECD4B89BDFF7C9FB /* POPVector.mm */,
+				F7CCB95C6DCCFB67A5EE2FB8FB8D21F9 /* TransformationMatrix.cpp */,
+				5EDB8326804F11DC7593E0C8BB10F079 /* TransformationMatrix.h */,
+				F4293DEE5752E56E9DA8E8B002681090 /* UnitBezier.h */,
+				C734D37F1D910427B2B1676FEB8A1453 /* Support Files */,
+			);
+			path = pop;
+			sourceTree = "<group>";
+		};
+		A68176CB053C2050A02A2C5E3901533D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				B28FBF1304F69F050F1720A23454B5C7 /* iCarousel.h */,
+				BAC36EAE6E953CAE275E5480BC885E19 /* iCarousel.m */,
+				33431829B39AFA089509B52BF636F218 /* Support Files */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BD4BCA1DC92ABD23B21AAE383D8A646B /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B8CA9D8444F452F828F49054AEDCECCC /* MBProgressHUD.h */,
+				1BBBC4BBD35FE970CFFA0529FDC5E05C /* MBProgressHUD.m */,
+				A052C72F170029D28ED029B2BF067173 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C734D37F1D910427B2B1676FEB8A1453 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18A79C53116556A07BD6CBDFF70E3CC1 /* pop.xcconfig */,
+				6C2E479ACEAA0E31FAA8F2005206D593 /* pop-dummy.m */,
+				24FA27EF24A6981D7DC58FFBDBA3D329 /* pop-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/pop";
+			sourceTree = "<group>";
+		};
+		CFC6E019D446D855F1CC4F031046875A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D4D093158423FC18F9E9D05428BA2E6 /* libiCarousel.a */,
+				B7777B5A076BD1F6BF2A61C85F486FB7 /* libMasonry.a */,
+				B13533A450B78874ADBC2D285D170B0C /* libMBProgressHUD.a */,
+				54D68E9592385EEE6AF3C195BFA23BE4 /* libMLSelectPhoto.a */,
+				728CCD656E73A6F91E06672F7B0B8A0D /* libPods.a */,
+				CE42459A3AA221F26F75B6B56C1CE7B4 /* libpop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E53380C61C13E7A3BB3FFB6CB0460FAB /* MLSelectPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				EC1533573AF232647E07331A2C84C5F1 /* MLPhotoPickerImageView.h */,
+				631875CF16CC9210073D826FA7B5350D /* MLPhotoPickerImageView.m */,
+				B14BC854FE86F04A2A84486E3D75DF1F /* MLSelectPhoto.h */,
+				12A99380016968F3C0F0F3A6C4DE43B6 /* MLSelectPhotoAssets.h */,
+				B3123D45CF7C717A90F5467DB08506A5 /* MLSelectPhotoAssets.m */,
+				E7417021839CE82C3C9DB9BEAB8A2117 /* MLSelectPhotoBrowserViewController.h */,
+				5F4E18F186E5B1FF18A1C771BF4766B1 /* MLSelectPhotoBrowserViewController.m */,
+				6C946BEFED205E67244FF3CE689E0BB7 /* MLSelectPhotoCommon.h */,
+				4A25BAEB9659493BCAFA41B37F1E8F58 /* MLSelectPhotoNavigationViewController.h */,
+				54D446807B3B617FA837BF99DD991654 /* MLSelectPhotoNavigationViewController.m */,
+				E0034EB9E079EE2D8BF54717FFC9C5DD /* MLSelectPhotoPickerAssetsViewController.h */,
+				816DE92D470AA434EFD4AC8CF833C0D6 /* MLSelectPhotoPickerAssetsViewController.m */,
+				5CD10761AD8A668D31BC1173DD2E8AF1 /* MLSelectPhotoPickerBrowserPhoto.h */,
+				D8789046F05BC21ABE43B8A7F46F3FE0 /* MLSelectPhotoPickerBrowserPhoto.m */,
+				A656DA0BE0810DBBD1834A62B5B14AD1 /* MLSelectPhotoPickerBrowserPhotoImageView.h */,
+				47D34E6FCFB74E4D99A1AC62D9BD1895 /* MLSelectPhotoPickerBrowserPhotoImageView.m */,
+				B45C1F8C01CF023FDDF4850212999A64 /* MLSelectPhotoPickerBrowserPhotoScrollView.h */,
+				53418EBECDEBCA463D9581C18BF775CD /* MLSelectPhotoPickerBrowserPhotoScrollView.m */,
+				E7BF3118964BCE21981708E13D53BF36 /* MLSelectPhotoPickerBrowserPhotoView.h */,
+				85BF34E1BB191FD0A9EFA8EE2BFF8595 /* MLSelectPhotoPickerBrowserPhotoView.m */,
+				49A028C09415994F929C42F5D4D03213 /* MLSelectPhotoPickerCollectionView.h */,
+				4E43E9F2EA8C9D1D5C11096C07658695 /* MLSelectPhotoPickerCollectionView.m */,
+				3D76154556A4DDD9B2DCD25CD30A6E54 /* MLSelectPhotoPickerCollectionViewCell.h */,
+				833AFAD69597005A751E7400C261858E /* MLSelectPhotoPickerCollectionViewCell.m */,
+				E3B8309C29C296AD344E33F3F5EB03AC /* MLSelectPhotoPickerDatas.h */,
+				1EA021079313C984F6E19E157A377535 /* MLSelectPhotoPickerDatas.m */,
+				9A3CDBF5E2C91822E09B5FE8D30C4413 /* MLSelectPhotoPickerFooterCollectionReusableView.h */,
+				73AC3C36AD69CC134B4A0307ABF518C3 /* MLSelectPhotoPickerFooterCollectionReusableView.m */,
+				79DD15C8D405672DEA937A6D53813970 /* MLSelectPhotoPickerGroup.h */,
+				52BC1CF7C5FFBD820031E491AF56EEB7 /* MLSelectPhotoPickerGroup.m */,
+				810E2A23B5E36AE5631FCCE42113B9AD /* MLSelectPhotoPickerGroupTableViewCell.h */,
+				A6B3326F762149AD1002ECDB587632F8 /* MLSelectPhotoPickerGroupTableViewCell.m */,
+				67BC88B7E1B6825F772EAA252083A344 /* MLSelectPhotoPickerGroupViewController.h */,
+				EF1B0915B172D5B507E40E8A351C6154 /* MLSelectPhotoPickerGroupViewController.m */,
+				798A2B3B3EEF5CFDEBA690195B7A2C2B /* MLSelectPhotoPickerViewController.h */,
+				93B1043FDA31CF21A08C55E12A79D201 /* MLSelectPhotoPickerViewController.m */,
+				A77F0DEE5AF4ABEBAB5B3669CC85683F /* UIImage+MLTint.h */,
+				448D37D70D7DE88A62C3403E00202DB9 /* UIImage+MLTint.m */,
+				DAB3967088086EBD166E5D464340FA68 /* UIView+MLExtension.h */,
+				A8F5073B61FCD4E9D7F0409BA98D216B /* UIView+MLExtension.m */,
+				0F8B08C445FFB59E70BBCB3CB10E844A /* Resources */,
+				F6BD58F08247C70E895D45C36D4C9CA1 /* Support Files */,
+			);
+			path = MLSelectPhoto;
+			sourceTree = "<group>";
+		};
+		F03B441E6ED210258DF6EE0754B6722A /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				56FCB3B7EC5810CA261E0EEEA4470729 /* MASCompositeConstraint.h */,
+				867626087A65405F062208D0B01F1571 /* MASCompositeConstraint.m */,
+				392F7663E85DD1A36C208737E980F05C /* MASConstraint.h */,
+				38CA7899357E88D2250B41BC6CAF403B /* MASConstraint.m */,
+				D73AA5BA06700D7D6387DE8C2B2B40DB /* MASConstraint+Private.h */,
+				3EDF5CB0E5E3255439DB58E26C79C3A4 /* MASConstraintMaker.h */,
+				25B2682B079671B0CDB9A6F155FAE4D9 /* MASConstraintMaker.m */,
+				AA7D3FE29ACEB5F42FA0A066927B655D /* MASLayoutConstraint.h */,
+				42D5905AB29E16C4EFD6805EA4367148 /* MASLayoutConstraint.m */,
+				FC26FC7D7623F1681A03CEE8E8B91B9F /* Masonry.h */,
+				E9A9772D3BFA38A0DEE2BD30B7A1BA45 /* MASUtilities.h */,
+				5C3F4752DFE32EA376FF335F0B58DA1C /* MASViewAttribute.h */,
+				90E906A6DEF2821F249149FDAAEF8416 /* MASViewAttribute.m */,
+				5B9B95D77AA4570AE7B1DBF3C70AB2D4 /* MASViewConstraint.h */,
+				E95102ADAE78879FCAC86D43C9B0CC72 /* MASViewConstraint.m */,
+				C974F0361D91E35407DD321C029CD76D /* NSArray+MASAdditions.h */,
+				941321FA2CE85A2CAEB57827131452FC /* NSArray+MASAdditions.m */,
+				2FC1F9A3143451BD4DEECAD1657C4029 /* NSArray+MASShorthandAdditions.h */,
+				7B2E91543B040CBD39D5051730335CDC /* NSLayoutConstraint+MASDebugAdditions.h */,
+				9151DC7A3C22FD7817A67E6AC671512C /* NSLayoutConstraint+MASDebugAdditions.m */,
+				34230F87D5AD936531F0B1BF393A4F69 /* View+MASAdditions.h */,
+				A167E82A4C0DB3754FC76AB299FB6574 /* View+MASAdditions.m */,
+				092A7883953B6A63F39B8E6E8ADB87C2 /* View+MASShorthandAdditions.h */,
+				87C469BF74060C88761189B0C58615EA /* ViewController+MASAdditions.h */,
+				A2BD6F96E782E76283A60E1FA7187C25 /* ViewController+MASAdditions.m */,
+				96A4D88F254C3439FCBA1BBD5AB21283 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		F2813FC6EA04278CF945928AAD5E7464 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A72D41109B234325104FB24FCD5DD52D /* AssetsLibrary.framework */,
+				3F17DE659B4735AA8A008B604AA11AF9 /* CoreGraphics.framework */,
+				84D4BBD289F5D3C6FBDBDF6B7C73CE3A /* Foundation.framework */,
+				18D8C88DD0C5F0EED41D0EF33918B1DF /* QuartzCore.framework */,
+				77A5436E9C391D175BA2EC00B7BFBF5B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F6BD58F08247C70E895D45C36D4C9CA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A4B70466C70E50ABA0FC03E9C9A62ED /* MLSelectPhoto.xcconfig */,
+				CAE7A074FC61EC8C432F308658E328FE /* MLSelectPhoto-dummy.m */,
+				8669815014042FF9A415E059F8A50C7C /* MLSelectPhoto-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MLSelectPhoto";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D6539957DFAD835C3E229AAAA8ACAF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD9BA0C5921C2C6F156D732974B4A20 /* FloatConversion.h in Headers */,
+				2211039B2F55A1C2A3BF8227F6CCBD85 /* POP.h in Headers */,
+				BEE7754A2C0009AD8CA652E96CEA0088 /* POPAction.h in Headers */,
+				E6286B77F26C76044F2D0FD933F88081 /* POPAnimatableProperty.h in Headers */,
+				70C4C9E4251810D838B88F4FD8B0E7D2 /* POPAnimation.h in Headers */,
+				6051040174594C69599F734C91C93ED7 /* POPAnimationEvent.h in Headers */,
+				64747241715572624C10E0705F3957F7 /* POPAnimationEventInternal.h in Headers */,
+				299A795E7DED36DA218F1EEC0E7C7955 /* POPAnimationExtras.h in Headers */,
+				55C50A086388C4D04A3C507B216A46A8 /* POPAnimationInternal.h in Headers */,
+				440A4E260C08E1A77C5F4A02D6F13CE8 /* POPAnimationPrivate.h in Headers */,
+				484BD2F22FF352F5E9556724B989114E /* POPAnimationRuntime.h in Headers */,
+				9C0868A1EF5AE1C61DECA56A39E853E9 /* POPAnimationTracer.h in Headers */,
+				2DECE22054FF3CFDD854536EE315CA2C /* POPAnimationTracerInternal.h in Headers */,
+				1FB53E7487FA0D31954552D8E8720D9B /* POPAnimator.h in Headers */,
+				43F6F5F7E9A28DE527D268E34023DAF5 /* POPAnimatorPrivate.h in Headers */,
+				DA4EF9D22CD33B442B600DA6C27526C5 /* POPBasicAnimation.h in Headers */,
+				9E0692143A04579DB89208575000538B /* POPBasicAnimationInternal.h in Headers */,
+				7D96D5109C9E69277ABD2DF9AB1D2A53 /* POPCGUtils.h in Headers */,
+				C66B88889BD74F179C98799092F1DD8E /* POPCustomAnimation.h in Headers */,
+				5C0988542FCADBFDDCE212192821925A /* POPDecayAnimation.h in Headers */,
+				82D18F79CDC4BAF9BE61C4C26C275565 /* POPDecayAnimationInternal.h in Headers */,
+				F45736DD67E8CE01FC509390D0CBC869 /* POPDefines.h in Headers */,
+				35F45B1292EBB3B9BE98B5552D0DA943 /* POPGeometry.h in Headers */,
+				1188B3C2B2841A631B6B1427AC42A56E /* POPLayerExtras.h in Headers */,
+				72D6D5B1CEABBFC1206FA6E2F39BC7D5 /* POPMath.h in Headers */,
+				3C9BB36A1DF7A3E587C3CB86CDE99904 /* POPPropertyAnimation.h in Headers */,
+				A570BC544D0570C3B63D36EACAA55212 /* POPPropertyAnimationInternal.h in Headers */,
+				7177B8B17F79D9CABCEEC7B089898FA3 /* POPSpringAnimation.h in Headers */,
+				F9E5DDE95B7A1697DD0569D566474B14 /* POPSpringAnimationInternal.h in Headers */,
+				0FFD26E177BC45152330EEE9C044D18A /* POPSpringSolver.h in Headers */,
+				EED85609FEA43BB6E7135AEF3C2858D4 /* POPVector.h in Headers */,
+				B73AAB4985B34F00B647766C081926CB /* TransformationMatrix.h in Headers */,
+				E79BABAD72E3CC8067CAD20BBE830CC2 /* UnitBezier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657D857047A6A935B5A2E9BD049194F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */,
+				B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */,
+				2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */,
+				EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */,
+				C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */,
+				9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */,
+				FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */,
+				3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */,
+				EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */,
+				FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */,
+				A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */,
+				2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */,
+				432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */,
+				331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FD3D4D510170DB635D93F1C6106F3F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1098DC9ADFC2D0F87995F1B91C01E04A /* iCarousel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971AA8B1AD9C6D30942C198D9AC3C761 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929C22C069697C42052E75D0CE0A5193 /* MLPhotoPickerImageView.h in Headers */,
+				CFFC346E304C37E16885A90ED220D8E2 /* MLSelectPhoto.h in Headers */,
+				DAB62FB2A9AD7D60F975057103783C8D /* MLSelectPhotoAssets.h in Headers */,
+				ECC0D130A5342EEBC42F570DFEA591B2 /* MLSelectPhotoBrowserViewController.h in Headers */,
+				C98096059D2499144E6E6AFDD78C79A9 /* MLSelectPhotoCommon.h in Headers */,
+				0F35F7880CA697C792258BDE668669C2 /* MLSelectPhotoNavigationViewController.h in Headers */,
+				0CB65B85950C2352672F77F7D76F3325 /* MLSelectPhotoPickerAssetsViewController.h in Headers */,
+				98EB11D0F45F0C31506C4087FD9F5082 /* MLSelectPhotoPickerBrowserPhoto.h in Headers */,
+				C0829F2C9D67B624DF0AA4DBF9133964 /* MLSelectPhotoPickerBrowserPhotoImageView.h in Headers */,
+				F14CDCB600D52BB74BA97DBFA31983F2 /* MLSelectPhotoPickerBrowserPhotoScrollView.h in Headers */,
+				5FB365F015B746C48F91AC68ED7ADCA5 /* MLSelectPhotoPickerBrowserPhotoView.h in Headers */,
+				08E6E41E204405912C2B49EC0499007F /* MLSelectPhotoPickerCollectionView.h in Headers */,
+				71A70D647BEBC13B524BDAF59081A5F1 /* MLSelectPhotoPickerCollectionViewCell.h in Headers */,
+				3C3DCBCD70950B9B87412DAC7C74C39B /* MLSelectPhotoPickerDatas.h in Headers */,
+				4055699E78AC5889A4FBBD74950A448C /* MLSelectPhotoPickerFooterCollectionReusableView.h in Headers */,
+				6DCF67BAA5B07DDA9B62A370F2B93694 /* MLSelectPhotoPickerGroup.h in Headers */,
+				5EB8AE7824AD45CA8983A980A6141AF7 /* MLSelectPhotoPickerGroupTableViewCell.h in Headers */,
+				D2BCABD9A082F13B04E802CC0BFD1F66 /* MLSelectPhotoPickerGroupViewController.h in Headers */,
+				628B71C957487AD0173F6E410363BCC9 /* MLSelectPhotoPickerViewController.h in Headers */,
+				862EF5655D90F2B7C27F475AAFB07F6D /* UIImage+MLTint.h in Headers */,
+				C25951FA088D7B91461FD94E9ADCB765 /* UIView+MLExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1C003613925663F17E023C73AF519C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A73E11256190D4AA0B7DA6C4E4F1A39 /* MLSelectPhoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1AF492F838776E482914A32D684D3C /* Build configuration list for PBXNativeTarget "MLSelectPhoto" */;
+			buildPhases = (
+				4D02DCEC534AF361A4034CAF465F0417 /* Sources */,
+				3535D1B413DB06AB3EE4FFBA91161C23 /* Frameworks */,
+				971AA8B1AD9C6D30942C198D9AC3C761 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLSelectPhoto;
+			productName = MLSelectPhoto;
+			productReference = 54D68E9592385EEE6AF3C195BFA23BE4 /* libMLSelectPhoto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2BA188DE280DF38C3BDEA768A3769426 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6F10F7F72F77B189A68305F8B79845F /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				9A443FD9DB32DB8024BEBB4B3C228E94 /* Sources */,
+				255D3CB4F87BB5035DFC97EFE498197E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B526B9B9E736754C75161191B4B26F62 /* PBXTargetDependency */,
+				D2623CAEA5EBC6E94BCA5661EA556D81 /* PBXTargetDependency */,
+				2FF3F6DB343D28F1ECBE59CDF9C363B1 /* PBXTargetDependency */,
+				12FDC420769F4BB76106411A490E2E27 /* PBXTargetDependency */,
+				BCE727B226EF47E171ACC625DF56BB93 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 728CCD656E73A6F91E06672F7B0B8A0D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		53480ED0BE09FF49E34B1702D485CAAB /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				DC8579C657135E3C32AB580A48C6D524 /* Sources */,
+				FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */,
+				657D857047A6A935B5A2E9BD049194F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = B7777B5A076BD1F6BF2A61C85F486FB7 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9494390523250106847516AB47E5F9FF /* iCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBEFCEEE7162F9A8774D9BD334236CB /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildPhases = (
+				CC84A3642910B2B5026370609C8953AA /* Sources */,
+				4A91BD5D9F219640D4FCC273086A0AC6 /* Frameworks */,
+				7FD3D4D510170DB635D93F1C6106F3F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = 7D4D093158423FC18F9E9D05428BA2E6 /* libiCarousel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CAD71773A66F03DCB0D5B836DDF5440C /* pop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3D78BA4647C035B95FCDB771E4F460 /* Build configuration list for PBXNativeTarget "pop" */;
+			buildPhases = (
+				DD96BF626AC06ABFE76284827CBFA8F2 /* Sources */,
+				5BAB8824029F369A5FE1E089C5238E88 /* Frameworks */,
+				5D6539957DFAD835C3E229AAAA8ACAF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pop;
+			productName = pop;
+			productReference = CE42459A3AA221F26F75B6B56C1CE7B4 /* libpop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				098439AB598DDF1AF51146A2E3E2E562 /* Sources */,
+				E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */,
+				EF1C003613925663F17E023C73AF519C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = B13533A450B78874ADBC2D285D170B0C /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CFC6E019D446D855F1CC4F031046875A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9494390523250106847516AB47E5F9FF /* iCarousel */,
+				53480ED0BE09FF49E34B1702D485CAAB /* Masonry */,
+				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
+				0A73E11256190D4AA0B7DA6C4E4F1A39 /* MLSelectPhoto */,
+				2BA188DE280DF38C3BDEA768A3769426 /* Pods */,
+				CAD71773A66F03DCB0D5B836DDF5440C /* pop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		098439AB598DDF1AF51146A2E3E2E562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */,
+				82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D02DCEC534AF361A4034CAF465F0417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C9FE9853235FAB79850311D3D8D8AE6 /* MLPhotoPickerImageView.m in Sources */,
+				6611CE49ED61897D58BEED96F03FD309 /* MLSelectPhoto-dummy.m in Sources */,
+				AFC0D30A47D900FDD9B3D219B3FA88EE /* MLSelectPhotoAssets.m in Sources */,
+				1255C690CC962595E0241CFE5EC335D7 /* MLSelectPhotoBrowserViewController.m in Sources */,
+				19E2185302879E44D13E020B99C7BFCB /* MLSelectPhotoNavigationViewController.m in Sources */,
+				3554A5178CA108F3830C5778106E8FDB /* MLSelectPhotoPickerAssetsViewController.m in Sources */,
+				C1CACE3C7E818EEC6D085E118749A01E /* MLSelectPhotoPickerBrowserPhoto.m in Sources */,
+				2FA45C20AB8452B9BBA4E43AD8F74FD4 /* MLSelectPhotoPickerBrowserPhotoImageView.m in Sources */,
+				086D1575D7C35376E63357269140C6E8 /* MLSelectPhotoPickerBrowserPhotoScrollView.m in Sources */,
+				75661AC9E21BD8F2485F7FED3C4EDF09 /* MLSelectPhotoPickerBrowserPhotoView.m in Sources */,
+				13C124C0692BA4EF26DD22EB4E96FE5B /* MLSelectPhotoPickerCollectionView.m in Sources */,
+				603AB223DC2FCFF8A17B5445DDFD8829 /* MLSelectPhotoPickerCollectionViewCell.m in Sources */,
+				354625D95D80D9026AA55E03574B1CDD /* MLSelectPhotoPickerDatas.m in Sources */,
+				2B29BA80FAA1F2D18C4ADB41641EF3DC /* MLSelectPhotoPickerFooterCollectionReusableView.m in Sources */,
+				FEA8AD9414BAB9CBC351940DF3D36A72 /* MLSelectPhotoPickerGroup.m in Sources */,
+				D1C71BA95A6A6D684A6791717A2229C9 /* MLSelectPhotoPickerGroupTableViewCell.m in Sources */,
+				B75AEB918613E8E9D33AE352F0C5CE50 /* MLSelectPhotoPickerGroupViewController.m in Sources */,
+				774E88ABC6984D6EBCFC0BC0FA0C0A08 /* MLSelectPhotoPickerViewController.m in Sources */,
+				1FBDBFDC9340C2A0DA6BFC796B46C545 /* UIImage+MLTint.m in Sources */,
+				6B20F7DFEC99D6C982641F1CD79E3799 /* UIView+MLExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A443FD9DB32DB8024BEBB4B3C228E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EBA5A2843B551745E6E357D8CC3921 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC84A3642910B2B5026370609C8953AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA85CA27950C248D5C2FEC5074ACFA2 /* iCarousel-dummy.m in Sources */,
+				2CDC8C75950EA195B984635CBEF6A36F /* iCarousel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8579C657135E3C32AB580A48C6D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */,
+				BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */,
+				335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */,
+				BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */,
+				81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */,
+				A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */,
+				E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */,
+				5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */,
+				D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */,
+				AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD96BF626AC06ABFE76284827CBFA8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F730C4559FE98864F5C61FE516267246 /* pop-dummy.m in Sources */,
+				A1A50FBC0A00E3459B05F9D4B10FD93D /* POPAnimatableProperty.mm in Sources */,
+				1B2962F8A016FB46A601381075EBB19F /* POPAnimation.mm in Sources */,
+				7646067EF8D1C79DBBE07F8E081278DC /* POPAnimationEvent.mm in Sources */,
+				D17083E28E55B89133B3230D48DD3C7D /* POPAnimationExtras.mm in Sources */,
+				0926F36F461339B6E201B8D739F6CCD5 /* POPAnimationRuntime.mm in Sources */,
+				9254369A85452BCFCA33E22E4DF0BCF4 /* POPAnimationTracer.mm in Sources */,
+				DFD98C961747DB981D6B1ABCF8630A10 /* POPAnimator.mm in Sources */,
+				0D25F4BB2F69C90FA3FF3B2032FB268E /* POPBasicAnimation.mm in Sources */,
+				1AB25B8075D1F1257915956B978D91C3 /* POPCGUtils.mm in Sources */,
+				3510DF46420C9501395CFB1229CD3EFB /* POPCustomAnimation.mm in Sources */,
+				FF137EF3E4C6675A4901E86AF4596925 /* POPDecayAnimation.mm in Sources */,
+				6E9F3236AFF9918002ECB6FECEC5F640 /* POPGeometry.mm in Sources */,
+				C8879E3AA393BBD3AE9837AB0591A0C4 /* POPLayerExtras.mm in Sources */,
+				E2CF926B7C7A046BE2C0C9D267D6675F /* POPMath.mm in Sources */,
+				AE0C268654F132656F4C8405F11CC8A8 /* POPPropertyAnimation.mm in Sources */,
+				BDE0CD9F4072532CC74FD446D8D8EE2D /* POPSpringAnimation.mm in Sources */,
+				7FB9057F27DF88F916A32C422487DB9F /* POPVector.mm in Sources */,
+				8C4A40CEF8E0544C6687C89440BAD456 /* TransformationMatrix.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12FDC420769F4BB76106411A490E2E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCarousel;
+			target = 9494390523250106847516AB47E5F9FF /* iCarousel */;
+			targetProxy = 7095C7ED6B63BA879A23B9A8AA278EE2 /* PBXContainerItemProxy */;
+		};
+		2FF3F6DB343D28F1ECBE59CDF9C363B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 53480ED0BE09FF49E34B1702D485CAAB /* Masonry */;
+			targetProxy = B6EF7E64BFC653EE2EADB0B357920671 /* PBXContainerItemProxy */;
+		};
+		B526B9B9E736754C75161191B4B26F62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = 92210368FE64FB378E71B2F6C9C449E3 /* PBXContainerItemProxy */;
+		};
+		BCE727B226EF47E171ACC625DF56BB93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = CAD71773A66F03DCB0D5B836DDF5440C /* pop */;
+			targetProxy = 54D1B5DA0231AD5905515E3D3E4A8E42 /* PBXContainerItemProxy */;
+		};
+		D2623CAEA5EBC6E94BCA5661EA556D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLSelectPhoto;
+			target = 0A73E11256190D4AA0B7DA6C4E4F1A39 /* MLSelectPhoto */;
+			targetProxy = 72FDF8807541333C62DA17BCFEB4F085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01B2B4FF9D26E863C328A4618116FF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE93D8F0A8DCC1619411BF782FD573A /* iCarousel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0581B577254E63E63C3E97F14BFC25C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A79C53116556A07BD6CBDFF70E3CC1 /* pop.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1A0C2135F128C185D8FAFF0EF8E31E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030E63CB7C2C5AA4E5D2997904CA6EE0 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		32990457EA650B3A9068E17EA8AB8777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5F03BFBE1938AC44ACF7C3312B8E58F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A79C53116556A07BD6CBDFF70E3CC1 /* pop.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		714B1F549A1DFE0B6A9F68CF27524C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030E63CB7C2C5AA4E5D2997904CA6EE0 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9C07C1B28365BC273ACCA58B932DD73B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE93D8F0A8DCC1619411BF782FD573A /* iCarousel.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C550302C2133243B83B7191844429167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB4B5729FD7BF51B6C336BEFB90BC33 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E462012CF1D2B008D230102E67359258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4B70466C70E50ABA0FC03E9C9A62ED /* MLSelectPhoto.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MLSelectPhoto/MLSelectPhoto-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ED2CBF2A6B682FB5E7EAA2CE28264B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAB4B5729FD7BF51B6C336BEFB90BC33 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EEB45EE496C11AB1BCE13F89970B3E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4B70466C70E50ABA0FC03E9C9A62ED /* MLSelectPhoto.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MLSelectPhoto/MLSelectPhoto-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F5BBEB820AF6387066964BB5F0DC916E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A3D78BA4647C035B95FCDB771E4F460 /* Build configuration list for PBXNativeTarget "pop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F03BFBE1938AC44ACF7C3312B8E58F6 /* Debug */,
+				0581B577254E63E63C3E97F14BFC25C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBEFCEEE7162F9A8774D9BD334236CB /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C07C1B28365BC273ACCA58B932DD73B /* Debug */,
+				01B2B4FF9D26E863C328A4618116FF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1AF492F838776E482914A32D684D3C /* Build configuration list for PBXNativeTarget "MLSelectPhoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E462012CF1D2B008D230102E67359258 /* Debug */,
+				EEB45EE496C11AB1BCE13F89970B3E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0C2135F128C185D8FAFF0EF8E31E2B /* Debug */,
+				714B1F549A1DFE0B6A9F68CF27524C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2CBF2A6B682FB5E7EAA2CE28264B44 /* Debug */,
+				C550302C2133243B83B7191844429167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6F10F7F72F77B189A68305F8B79845F /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32990457EA650B3A9068E17EA8AB8777 /* Debug */,
+				F5BBEB820AF6387066964BB5F0DC916E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
