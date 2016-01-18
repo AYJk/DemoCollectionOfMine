@@ -89,18 +89,30 @@ static const CGFloat kBorderW = 50;
     if (metadataObjects.count > 0) {
         [_session stopRunning];
         AVMetadataMachineReadableCodeObject *metadataObject = [metadataObjects firstObject];
-        UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"扫描结果" message:metadataObject.stringValue delegate:self cancelButtonTitle:@"退出" otherButtonTitles:@"再次扫描", nil];
-        [alterView show];
+//        UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"扫描结果" message:metadataObject.stringValue delegate:self cancelButtonTitle:@"退出" otherButtonTitles:@"再次扫描", nil];
+//        [alterView show];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Scan Result" message:metadataObject.stringValue preferredStyle:UIAlertControllerStyleAlert];
+        __weak ScanViewController *weakSelf = self;
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [weakSelf.session startRunning];
+        }];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [weakSelf.session startRunning];
+        }];
+        [alertController addAction:cancelAction];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
     }
 }
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        [self disMiss];
-    } else if (buttonIndex == 1) {
-        [_session startRunning];
-    }
-}
+
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+//{
+//    if (buttonIndex == 0) {
+//        [self disMiss];
+//    } else if (buttonIndex == 1) {
+//        [_session startRunning];
+//    }
+//}
 #pragma mark - 获取扫描区域的比例关系
 -(CGRect)getScanCrop:(CGRect)rect readerViewBounds:(CGRect)readerViewBounds {
     
@@ -266,8 +278,12 @@ static const CGFloat kBorderW = 50;
         [self presentViewController:imagePC animated:YES completion:nil];
     } else {
         
-        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"设备不支持访问相册，请在设置->隐私->照片中进行设置！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alter show];
+//        UIAlertView *alter = [[UIAlertView alloc] initWithTitle:@"提示" message:@"设备不支持访问相册，请在设置->隐私->照片中进行设置！" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//        [alter show];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"设备不支持访问相册，请在设置->隐私->照片中进行设置！" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:cancelAction];
+        [self presentViewController:alertController animated:YES completion:nil];
     }
 }
 
@@ -283,12 +299,20 @@ static const CGFloat kBorderW = 50;
         if (features.count >= 1) {
             CIQRCodeFeature *feature = [features objectAtIndex:0];
             NSString *scannedResult = feature.messageString;
-            UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"扫描结果" message:scannedResult delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alterView show];
+//            UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"扫描结果" message:scannedResult delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//            [alterView show];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Scan Result" message:scannedResult preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
+            [alertController addAction:cancelAction];
+            [self presentViewController:alertController animated:YES completion:nil];
         } else {
             
-            UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"改图片没有包含一个二维码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alterView show];
+//            UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"改图片没有包含一个二维码" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//            [alterView show];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"图片没有包含一个二维码" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"cancel" style:UIAlertActionStyleCancel handler:nil];
+            [alertController addAction:cancelAction];
+            [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
 }
