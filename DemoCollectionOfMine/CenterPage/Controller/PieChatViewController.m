@@ -18,7 +18,7 @@
     
     [super viewDidLoad];
     self.title = @"PieChat";
-    PieChartCircularArc *pieChat = [[PieChartCircularArc alloc] pieChartCenter:CGPointMake(self.view.bounds.size.width * .5, self.view.bounds.size.height * .5) radius:120 colors:@[[UIColor redColor], [UIColor blueColor], [UIColor yellowColor], [UIColor grayColor]] datas:@[@.2,@.4,@.1,@.3] offset:20];
+    PieChartCircularArc *pieChat = [[PieChartCircularArc alloc] pieChartCenter:CGPointMake([UIScreen mainScreen].bounds.size.width * .5, [UIScreen mainScreen].bounds.size.height * .5) radius:120 colors:@[[UIColor redColor], [UIColor blueColor], [UIColor yellowColor], [UIColor grayColor]] datas:@[@.2,@.4,@.1,@.3] offset:20];
     [self.view addSubview:pieChat];
 }
 

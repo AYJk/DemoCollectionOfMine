@@ -15,6 +15,8 @@
 
 @end
 
+static CGPoint  bottomCenter;
+
 @implementation POPPanUpViewController
 
 - (void)viewDidLoad {
@@ -25,8 +27,14 @@
     [self configCircleViews];
 }
 
-- (void)configCircleViews {
+- (void)viewDidAppear:(BOOL)animated {
     
+    [super viewDidAppear:animated];
+    bottomCenter = _bottomView.center;
+}
+
+- (void)configCircleViews {
+
     _circleView.layer.cornerRadius = _circleView.bounds.size.width * .5;
     UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panAction:)];
     [_circleView addGestureRecognizer:panGes];
@@ -36,12 +44,13 @@
 
 - (void)configBottomViews {
     
-    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:_bottomView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(15, 15)];
-    CAShapeLayer *maskShaperLayer = [[CAShapeLayer alloc] init];
-    maskShaperLayer.frame = _bottomView.bounds;
-    maskShaperLayer.path = bezierPath.CGPath;
-    _bottomView.layer.mask = maskShaperLayer;
-    _bottomView.layer.masksToBounds = YES;
+//    UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:_bottomView.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(15, 15)];
+//    CAShapeLayer *maskShaperLayer = [[CAShapeLayer alloc] init];
+//    maskShaperLayer.frame = CGRectMake(0, 0, self.view.bounds.size.width, 100);
+//    maskShaperLayer.path = bezierPath.CGPath;
+//    _bottomView.layer.mask = maskShaperLayer;
+//    _bottomView.layer.masksToBounds = YES;
+    _bottomView.layer.cornerRadius = 15;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
     [_bottomView addGestureRecognizer:tap];
 }
@@ -80,23 +89,23 @@
 
 - (void)showBottomView {
     
-    POPSpringAnimation *springAnima = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
-    springAnima.toValue = @(500);
+    POPSpringAnimation *springAnima = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPosition];
+    springAnima.toValue = [NSValue valueWithCGPoint:CGPointMake(bottomCenter.x, bottomCenter.y - 200)];
     springAnima.springSpeed = 16;
     springAnima.springBounciness = 12;
     springAnima.beginTime = CACurrentMediaTime();
-    [_bottomView pop_addAnimation:springAnima forKey:@"showSpringAnima"];
+    [_bottomView.layer pop_addAnimation:springAnima forKey:@"showSpringAnima"];
     self.view.backgroundColor = [UIColor colorWithWhite:.9 alpha:.7];
 }
 
 - (void)hidenBottomView {
     
-    POPSpringAnimation *springAnima = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
-    springAnima.toValue = @(800);
+    POPSpringAnimation *springAnima = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPosition];
+    springAnima.toValue = [NSValue valueWithCGPoint:bottomCenter];
     springAnima.springSpeed = 16;
     springAnima.springBounciness = 12;
     springAnima.beginTime = CACurrentMediaTime();
-    [_bottomView pop_addAnimation:springAnima forKey:@"HidenSpringAnima"];
+    [_bottomView.layer pop_addAnimation:springAnima forKey:@"HidenSpringAnima"];
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

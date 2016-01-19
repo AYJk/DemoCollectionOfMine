@@ -16,22 +16,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJz-xL-MV1">
-                    <rect key="frame" x="0.0" y="577" width="375" height="446"/>
-                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提示：点击相应的视图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBV-SP-WCf">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示：点击相应的视图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBV-SP-WCf">
                     <rect key="frame" x="102" y="83" width="170" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="NEt-FD-TKE"/>
+                        <constraint firstAttribute="height" constant="21" id="fvV-zi-M4G"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-lu-nyI">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJz-xL-MV1">
+                    <rect key="frame" x="0.0" y="558" width="375" height="446"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="446" id="8Ti-b9-V83"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-lu-nyI">
                     <rect key="frame" x="137" y="284" width="100" height="100"/>
                     <color key="backgroundColor" red="0.94509803920000002" green="0.1843137255" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="3Cp-Sl-OVf"/>
+                        <constraint firstAttribute="height" constant="100" id="OhC-U1-ARu"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UJz-xL-MV1" secondAttribute="bottom" constant="-337" id="6g4-Uw-YJb"/>
+                <constraint firstItem="RBV-SP-WCf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ac6-0N-Y6r"/>
+                <constraint firstItem="RBV-SP-WCf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="bfj-fg-dan"/>
+                <constraint firstAttribute="trailing" secondItem="UJz-xL-MV1" secondAttribute="trailing" id="bj3-TK-oRC"/>
+                <constraint firstItem="UJz-xL-MV1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eEt-T8-r9c"/>
+                <constraint firstItem="qWV-lu-nyI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qTD-7A-3lE"/>
+                <constraint firstItem="qWV-lu-nyI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yFh-Ty-5Zr"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="412.5" y="445.5"/>
         </view>

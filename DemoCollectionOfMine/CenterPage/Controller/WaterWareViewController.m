@@ -22,7 +22,7 @@
     [super viewDidLoad];
     self.title = @"Water Ware";
     _waterView = [[WaterWareView alloc] initWithFrame:CGRectMake(0, 0, 200,200)];
-    _waterView.center = self.view.center;
+    _waterView.center = CGPointMake([UIScreen mainScreen].bounds.size.width * .5, [UIScreen mainScreen].bounds.size.height * .5);
     _waterView.percent = .25;
     [self.view addSubview:_waterView];
 }

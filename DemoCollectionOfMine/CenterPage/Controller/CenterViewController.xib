@@ -14,16 +14,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Andy的Demo集合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-Px-frp">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微博：@今天AY敲代码了吗" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nav-wa-f6f">
+                    <rect key="frame" x="185" y="638" width="182" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="iHd-RB-Q8a"/>
+                        <constraint firstAttribute="width" constant="182" id="xyW-ET-y6b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DemoCollection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBf-Px-frp">
                     <rect key="frame" x="119" y="186" width="136" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0y4-mG-atQ"/>
+                        <constraint firstAttribute="width" constant="136" id="MqW-OL-A84"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="498.5" y="269.5"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nav-wa-f6f" secondAttribute="trailing" constant="8" id="5s7-ub-Viv"/>
+                <constraint firstItem="qBf-Px-frp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="186" id="V9Y-ol-6ji"/>
+                <constraint firstAttribute="bottom" secondItem="nav-wa-f6f" secondAttribute="bottom" constant="8" id="jTf-2Q-y28"/>
+                <constraint firstItem="qBf-Px-frp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="p8a-M7-On6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="375.5" y="341.5"/>
         </view>
     </objects>
 </document>

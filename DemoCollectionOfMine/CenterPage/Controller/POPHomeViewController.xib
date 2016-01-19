@@ -14,35 +14,51 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXh-fQ-ruN">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXh-fQ-ruN">
                     <rect key="frame" x="90" y="117" width="195" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="195" id="3me-EN-kpc"/>
+                        <constraint firstAttribute="height" constant="30" id="ctz-XI-09x"/>
+                    </constraints>
                     <state key="normal" title="POP三种基本用法和实现秒表"/>
                     <connections>
                         <action selector="popBasicAction:" destination="-1" eventType="touchUpInside" id="m76-Du-o8G"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-Ql-OVT">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4M1-Ql-OVT">
                     <rect key="frame" x="127" y="155" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="R0P-Qs-skh"/>
+                        <constraint firstAttribute="width" constant="120" id="hQO-8z-17t"/>
+                    </constraints>
                     <state key="normal" title="POP实现上拉窗口"/>
                     <connections>
                         <action selector="popPanUpAction:" destination="-1" eventType="touchUpInside" id="Cxl-id-Jov"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-1k-0cN">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-1k-0cN">
                     <rect key="frame" x="127" y="193" width="121" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FbK-Ch-nqv"/>
+                        <constraint firstAttribute="width" constant="121" id="xal-YP-PO9"/>
+                    </constraints>
                     <state key="normal" title="Path弹出菜单动画"/>
                     <connections>
                         <action selector="pathMenuAction:" destination="-1" eventType="touchUpInside" id="2Xf-OP-4HK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCo-gt-r1u">
-                    <rect key="frame" x="164" y="231" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4M1-Ql-OVT" firstAttribute="top" secondItem="hXh-fQ-ruN" secondAttribute="bottom" constant="8" id="6gG-W9-i3M"/>
+                <constraint firstItem="4M1-Ql-OVT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tr3-8R-iN7"/>
+                <constraint firstItem="hXh-fQ-ruN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bEm-Zi-OJh"/>
+                <constraint firstItem="hXh-fQ-ruN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="117" id="cLo-Ja-bBM"/>
+                <constraint firstItem="dRc-1k-0cN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e1C-hW-s7Y"/>
+                <constraint firstItem="dRc-1k-0cN" firstAttribute="top" secondItem="4M1-Ql-OVT" secondAttribute="bottom" constant="8" id="xyS-HE-hxa"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-8.5" y="276.5"/>
+            <point key="canvasLocation" x="85.5" y="230.5"/>
         </view>
     </objects>
 </document>

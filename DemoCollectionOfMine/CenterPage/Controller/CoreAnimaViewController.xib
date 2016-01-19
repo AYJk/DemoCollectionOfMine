@@ -14,36 +14,61 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMr-mI-vhg">
-                    <rect key="frame" x="137" y="96" width="100" height="30"/>
-                    <state key="normal" title="CATransaction"/>
-                    <connections>
-                        <action selector="transactionAction:" destination="-1" eventType="touchUpInside" id="omx-es-D56"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-QC-6kH">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ2-QC-6kH">
                     <rect key="frame" x="135" y="134" width="105" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XgJ-GW-rCG"/>
+                        <constraint firstAttribute="width" constant="105" id="mex-GK-31b"/>
+                    </constraints>
                     <state key="normal" title="环形可点击表图"/>
                     <connections>
                         <action selector="pieChatAction:" destination="-1" eventType="touchUpInside" id="u5y-Aw-s65"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-0z-pRX">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lI-0z-pRX">
                     <rect key="frame" x="142" y="172" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="auq-A5-rvV"/>
+                        <constraint firstAttribute="width" constant="90" id="rSR-0R-tS9"/>
+                    </constraints>
                     <state key="normal" title="注水进度展示"/>
                     <connections>
                         <action selector="waterWareAction:" destination="-1" eventType="touchUpInside" id="ufP-F0-Yuj"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-vZ-yrS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBL-vZ-yrS">
                     <rect key="frame" x="135" y="210" width="105" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="105" id="YZC-DZ-qdl"/>
+                    </constraints>
                     <state key="normal" title="设备陀螺仪参数"/>
                     <connections>
                         <action selector="hardWareMotionAction:" destination="-1" eventType="touchUpInside" id="rcp-En-hb8"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMr-mI-vhg">
+                    <rect key="frame" x="137" y="96" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="1iX-Ii-Jfi"/>
+                        <constraint firstAttribute="height" constant="30" id="Upk-Qc-UOU"/>
+                    </constraints>
+                    <state key="normal" title="CATransaction"/>
+                    <connections>
+                        <action selector="transactionAction:" destination="-1" eventType="touchUpInside" id="omx-es-D56"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UMr-mI-vhg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4g7-WI-MnZ"/>
+                <constraint firstItem="0lI-0z-pRX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CRD-Ik-Cp2"/>
+                <constraint firstItem="PBL-vZ-yrS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FHJ-t1-y4g"/>
+                <constraint firstItem="kJ2-QC-6kH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L29-Ii-SU4"/>
+                <constraint firstItem="kJ2-QC-6kH" firstAttribute="top" secondItem="UMr-mI-vhg" secondAttribute="bottom" constant="8" id="L5w-tH-jJZ"/>
+                <constraint firstItem="0lI-0z-pRX" firstAttribute="top" secondItem="kJ2-QC-6kH" secondAttribute="bottom" constant="8" id="WtB-ow-ick"/>
+                <constraint firstItem="PBL-vZ-yrS" firstAttribute="top" secondItem="0lI-0z-pRX" secondAttribute="bottom" constant="8" id="Zrv-wi-FrI"/>
+                <constraint firstItem="UMr-mI-vhg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="96" id="fvM-pP-Gra"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="347.5" y="392.5"/>
         </view>

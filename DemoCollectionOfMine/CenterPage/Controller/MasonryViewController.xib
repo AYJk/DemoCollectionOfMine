@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
@@ -15,36 +14,62 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-6E-fRK">
-                    <rect key="frame" x="14" y="629" width="47" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-6E-fRK">
+                    <rect key="frame" x="8" y="629" width="47" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="6xg-Mc-ylz"/>
+                        <constraint firstAttribute="height" constant="30" id="Lzj-ol-oFB"/>
+                    </constraints>
                     <state key="normal" title="Demo1"/>
                     <connections>
                         <action selector="demo1Action:" destination="-1" eventType="touchUpInside" id="fvX-xr-Hun"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmV-jb-OT9">
-                    <rect key="frame" x="127" y="629" width="50" height="30"/>
-                    <state key="normal" title="Demo3"/>
-                    <connections>
-                        <action selector="demo3Action:" destination="-1" eventType="touchUpInside" id="7Aa-ve-Xqg"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-MR-JEK">
-                    <rect key="frame" x="310" y="629" width="39" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6E-MR-JEK">
+                    <rect key="frame" x="328" y="629" width="39" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="78t-0b-nuc"/>
+                        <constraint firstAttribute="width" constant="39" id="XF4-IL-Rnz"/>
+                    </constraints>
                     <state key="normal" title="Reset"/>
                     <connections>
                         <action selector="resetAction:" destination="-1" eventType="touchUpInside" id="E7p-ql-oF2"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWo-gX-frs">
-                    <rect key="frame" x="69" y="629" width="50" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWo-gX-frs">
+                    <rect key="frame" x="63" y="629" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Jra-D4-E6A"/>
+                        <constraint firstAttribute="height" constant="30" id="LhE-f5-WE1"/>
+                    </constraints>
                     <state key="normal" title="Demo2"/>
                     <connections>
                         <action selector="demoAction2:" destination="-1" eventType="touchUpInside" id="Y5d-vd-yec"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmV-jb-OT9">
+                    <rect key="frame" x="121" y="629" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="9xq-T6-rh5"/>
+                        <constraint firstAttribute="height" constant="30" id="rR4-VI-yqH"/>
+                    </constraints>
+                    <state key="normal" title="Demo3"/>
+                    <connections>
+                        <action selector="demo3Action:" destination="-1" eventType="touchUpInside" id="7Aa-ve-Xqg"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="f6E-MR-JEK" secondAttribute="bottom" constant="8" id="0Za-Ag-Tgk"/>
+                <constraint firstItem="ncc-6E-fRK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="7lb-m1-gYq"/>
+                <constraint firstAttribute="bottom" secondItem="ncc-6E-fRK" secondAttribute="bottom" constant="8" id="DDn-q5-Lth"/>
+                <constraint firstAttribute="bottom" secondItem="fWo-gX-frs" secondAttribute="bottom" constant="8" id="iqa-sI-v0R"/>
+                <constraint firstAttribute="bottom" secondItem="NmV-jb-OT9" secondAttribute="bottom" constant="8" id="mtS-yX-8Om"/>
+                <constraint firstItem="NmV-jb-OT9" firstAttribute="leading" secondItem="fWo-gX-frs" secondAttribute="trailing" constant="8" id="qlW-p8-GNJ"/>
+                <constraint firstItem="fWo-gX-frs" firstAttribute="leading" secondItem="ncc-6E-fRK" secondAttribute="trailing" constant="8" id="rDE-LL-VM5"/>
+                <constraint firstAttribute="trailing" secondItem="f6E-MR-JEK" secondAttribute="trailing" constant="8" id="sCp-zw-aGm"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="548.5" y="389.5"/>
         </view>

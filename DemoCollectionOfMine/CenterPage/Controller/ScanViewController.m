@@ -35,7 +35,7 @@ static const CGFloat kBorderW = 50;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = [UIColor whiteColor];
     //防止返回的时候出现黑边
 //    self.view.clipsToBounds = YES;
     //遮罩

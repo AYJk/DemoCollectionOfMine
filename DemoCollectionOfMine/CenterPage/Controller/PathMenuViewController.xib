@@ -15,14 +15,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr6-1M-Tlv">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr6-1M-Tlv">
                     <rect key="frame" x="148" y="117" width="78" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Xqq-gj-1Jx"/>
+                        <constraint firstAttribute="width" constant="78" id="t5T-Tf-d6d"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Nr6-1M-Tlv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H15-rR-ivx"/>
+                <constraint firstItem="Nr6-1M-Tlv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="117" id="YAU-kK-gQW"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="49.5" y="150.5"/>
         </view>

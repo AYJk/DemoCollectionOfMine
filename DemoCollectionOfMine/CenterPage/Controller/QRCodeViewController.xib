@@ -14,22 +14,34 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7k-he-tXc">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7k-he-tXc">
                     <rect key="frame" x="172" y="107" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ChP-xF-jhZ"/>
+                        <constraint firstAttribute="width" constant="30" id="WGv-Re-kVn"/>
+                    </constraints>
                     <state key="normal" title="扫描"/>
                     <connections>
                         <action selector="scanAction:" destination="-1" eventType="touchUpInside" id="Vgx-Bq-tEm"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYa-tF-j4h">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYa-tF-j4h">
                     <rect key="frame" x="172" y="145" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HDN-UN-Sv5"/>
+                        <constraint firstAttribute="width" constant="30" id="odG-sz-lX1"/>
+                    </constraints>
                     <state key="normal" title="生成"/>
                     <connections>
                         <action selector="createAction:" destination="-1" eventType="touchUpInside" id="zt1-as-9YQ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-9A-NEf">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-9A-NEf">
                     <rect key="frame" x="142" y="183" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="2um-mG-1Fx"/>
+                        <constraint firstAttribute="height" constant="30" id="RlE-uD-mvM"/>
+                    </constraints>
                     <state key="normal" title="读取本地相册"/>
                     <connections>
                         <action selector="loadAction:" destination="-1" eventType="touchUpInside" id="XPd-M3-DLa"/>
@@ -37,6 +49,14 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MOQ-9A-NEf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2lz-8t-Q2R"/>
+                <constraint firstItem="rYa-tF-j4h" firstAttribute="top" secondItem="f7k-he-tXc" secondAttribute="bottom" constant="8" id="AIM-Dk-w5k"/>
+                <constraint firstItem="rYa-tF-j4h" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HKI-MH-Ef7"/>
+                <constraint firstItem="f7k-he-tXc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NBN-iO-y4D"/>
+                <constraint firstItem="MOQ-9A-NEf" firstAttribute="top" secondItem="rYa-tF-j4h" secondAttribute="bottom" constant="8" id="fST-sZ-g22"/>
+                <constraint firstItem="f7k-he-tXc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="oY9-dX-qoG"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="440" y="290"/>
         </view>

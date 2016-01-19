@@ -183,7 +183,16 @@ static BOOL _isClick;
             alphaAnima.duration = .3;
             alphaAnima.beginTime = CACurrentMediaTime();
             [pathButton.layer pop_addAnimation:alphaAnima forKey:@"PathBtnOpacityHide"];
-            
+            [alphaAnima setCompletionBlock:^(POPAnimation *animation, BOOL finish) {
+                
+                if (finish) {
+                    CGRect pathBtnFrame = pathButton.frame;
+                    pathBtnFrame.size = CGSizeMake(0, 0);
+                    pathButton.frame = pathBtnFrame;
+                    
+                    pathButton.alpha = 0;
+                }
+            }];
         } else {
             
             POPBasicAnimation *smallAnima = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerSize];
@@ -207,11 +216,10 @@ static BOOL _isClick;
     basicAnima.beginTime = CACurrentMediaTime();
     [_centerItem.layer pop_addAnimation:basicAnima forKey:@"btnRotationReset"];
     _isClick = NO;
-    
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+
     [self pathButtonDidClicked:nil];
 }
 

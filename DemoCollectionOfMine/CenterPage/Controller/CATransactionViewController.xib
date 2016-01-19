@@ -16,32 +16,59 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QWx-m9-nUG">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QWx-m9-nUG">
                     <rect key="frame" x="47" y="104" width="280" height="313"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="313" id="ioo-66-GmT"/>
+                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-GY-Jw9">
-                    <rect key="frame" x="247" y="543" width="80" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-GY-Jw9">
+                    <rect key="frame" x="287" y="629" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Cpu-Ul-YeF"/>
+                        <constraint firstAttribute="height" constant="30" id="ieE-dt-iM1"/>
+                    </constraints>
                     <state key="normal" title="Next"/>
                     <connections>
                         <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="ta8-E0-tfc"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-6L-bDd">
-                    <rect key="frame" x="47" y="466" width="280" height="30"/>
-                    <state key="normal" title="suckEffect"/>
-                    <connections>
-                        <action selector="changeAction:" destination="-1" eventType="touchUpInside" id="Lfe-ep-Vs5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-Z8-4q5">
-                    <rect key="frame" x="47" y="543" width="80" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-Z8-4q5">
+                    <rect key="frame" x="8" y="629" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="UbY-TQ-5Wh"/>
+                        <constraint firstAttribute="height" constant="30" id="l4M-S7-QGS"/>
+                    </constraints>
                     <state key="normal" title="Last"/>
                     <connections>
                         <action selector="lastAction:" destination="-1" eventType="touchUpInside" id="2t8-7Y-dPy"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhR-6L-bDd">
+                    <rect key="frame" x="47" y="553" width="280" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="YkT-b0-adJ"/>
+                    </constraints>
+                    <state key="normal" title="suckEffect"/>
+                    <connections>
+                        <action selector="changeAction:" destination="-1" eventType="touchUpInside" id="Lfe-ep-Vs5"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QWx-m9-nUG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="0G3-Qq-lsI"/>
+                <constraint firstItem="QWx-m9-nUG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="61f-B0-mDB"/>
+                <constraint firstAttribute="trailing" secondItem="GE6-GY-Jw9" secondAttribute="trailing" constant="8" id="Dp9-Im-vUN"/>
+                <constraint firstItem="dhR-6L-bDd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="FXQ-La-Cin"/>
+                <constraint firstItem="QWx-m9-nUG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IQS-Fj-ZIl"/>
+                <constraint firstItem="m4B-Z8-4q5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="SwG-pK-LDl"/>
+                <constraint firstAttribute="bottom" secondItem="m4B-Z8-4q5" secondAttribute="bottom" constant="8" id="h7L-7N-IWc"/>
+                <constraint firstAttribute="trailing" secondItem="dhR-6L-bDd" secondAttribute="trailing" constant="48" id="kbh-Mi-8Hy"/>
+                <constraint firstItem="m4B-Z8-4q5" firstAttribute="top" secondItem="dhR-6L-bDd" secondAttribute="bottom" constant="28" id="mJ2-Cv-Gwa"/>
+                <constraint firstAttribute="trailing" secondItem="QWx-m9-nUG" secondAttribute="trailing" constant="48" id="nFT-j1-FqO"/>
+                <constraint firstAttribute="bottom" secondItem="GE6-GY-Jw9" secondAttribute="bottom" constant="8" id="upc-n3-WtC"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="-26.5" y="345.5"/>
         </view>

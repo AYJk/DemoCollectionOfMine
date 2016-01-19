@@ -57,22 +57,29 @@ static NSString *cellID = @"menuTableViewCell";
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     [window addSubview:_backgroundView];
     
-    _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 156, 74, frame.size.width, 40 * titles.count) style:UITableViewStylePlain];
+    _menuTableView = [[UITableView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 156 + frame.size.width * .5, 74 - 40 * titles.count * .5, frame.size.width, 40 * titles.count) style:UITableViewStylePlain];
     [_menuTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
     _menuTableView.rowHeight = 40;
     _menuTableView.delegate = _backgroundView;
     _menuTableView.dataSource = _backgroundView;
     _menuTableView.bounces = NO;
     _menuTableView.layer.cornerRadius = 10;
-    _menuTableView.layer.anchorPoint = CGPointMake(1.0, 0);
     _menuTableView.transform = CGAffineTransformMakeScale(.0001, .0001);
-    _menuTableView.alpha = 0;
-    [window addSubview:_menuTableView];
+    _menuTableView.layer.anchorPoint = CGPointMake(1, 0);
+//    _menuTableView.alpha = 0;
+
+//    [UIView animateWithDuration:1 animations:^{
+//        _menuTableView.transform = CGAffineTransformMakeScale(1.0, 1.0);
+//        _menuTableView.alpha = 1;
+//    }];
     
-    [UIView animateWithDuration:5 animations:^{
-        _menuTableView.transform = CGAffineTransformMakeScale(1.0, 1.0);
-        _menuTableView.alpha = 1;
-    }];
+    POPBasicAnimation *largeAnima = [POPBasicAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    largeAnima.fromValue = [NSValue valueWithCGSize:CGSizeMake(0, 0)];
+    largeAnima.toValue = [NSValue valueWithCGSize:CGSizeMake(1, 1)];
+    largeAnima.beginTime = CACurrentMediaTime();
+    largeAnima.duration = .5;
+    [_menuTableView.layer pop_addAnimation:largeAnima forKey:@"LargeAnima"];
+    [window addSubview:_menuTableView];
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)tap {

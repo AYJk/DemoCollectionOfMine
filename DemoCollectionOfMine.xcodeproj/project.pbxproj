@@ -33,7 +33,6 @@
 		A154305C1C3E2D8900E28F1B /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A154305A1C3E2D8900E28F1B /* QRCodeViewController.m */; };
 		A154305D1C3E2D8900E28F1B /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154305B1C3E2D8900E28F1B /* QRCodeViewController.xib */; };
 		A15430611C3E2EA100E28F1B /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A154305F1C3E2EA100E28F1B /* ScanViewController.m */; };
-		A15430621C3E2EA100E28F1B /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15430601C3E2EA100E28F1B /* ScanViewController.xib */; };
 		A15430661C3E2EB600E28F1B /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15430641C3E2EB600E28F1B /* CreateViewController.m */; };
 		A15430671C3E2EB600E28F1B /* CreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15430651C3E2EB600E28F1B /* CreateViewController.xib */; };
 		A154306B1C3E2EC300E28F1B /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15430691C3E2EC300E28F1B /* LoadViewController.m */; };
@@ -144,7 +143,6 @@
 		A154305B1C3E2D8900E28F1B /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		A154305E1C3E2EA100E28F1B /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		A154305F1C3E2EA100E28F1B /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
-		A15430601C3E2EA100E28F1B /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		A15430631C3E2EB600E28F1B /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
 		A15430641C3E2EB600E28F1B /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 		A15430651C3E2EB600E28F1B /* CreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateViewController.xib; sourceTree = "<group>"; };
@@ -361,7 +359,6 @@
 				A154305B1C3E2D8900E28F1B /* QRCodeViewController.xib */,
 				A154305E1C3E2EA100E28F1B /* ScanViewController.h */,
 				A154305F1C3E2EA100E28F1B /* ScanViewController.m */,
-				A15430601C3E2EA100E28F1B /* ScanViewController.xib */,
 				A15430631C3E2EB600E28F1B /* CreateViewController.h */,
 				A15430641C3E2EB600E28F1B /* CreateViewController.m */,
 				A15430651C3E2EB600E28F1B /* CreateViewController.xib */,
@@ -684,7 +681,6 @@
 				A156D6191C33732400FE64D5 /* chooser-button-tab-highlighted@2x.png in Resources */,
 				A15430561C3DFC5D00E28F1B /* PieChatViewController.xib in Resources */,
 				A156D61D1C33732400FE64D5 /* chooser-moment-icon-camera-highlighted@2x.png in Resources */,
-				A15430621C3E2EA100E28F1B /* ScanViewController.xib in Resources */,
 				A139CA121C324FF200D56DB8 /* POPViewController.xib in Resources */,
 				A139CA171C3250D200D56DB8 /* CATransactionViewController.xib in Resources */,
 				A156D61E1C33732400FE64D5 /* chooser-moment-icon-camera@2x.png in Resources */,

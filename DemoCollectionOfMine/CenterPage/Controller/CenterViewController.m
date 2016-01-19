@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     SWRevealViewController *revealViewController = self.revealViewController;
+    [revealViewController tapGestureRecognizer];
     [self.view addGestureRecognizer:revealViewController.panGestureRecognizer];
 }
 
