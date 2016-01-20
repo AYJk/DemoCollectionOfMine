@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,22 +37,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2A04A4E528D30CED92C1814C253C6A35</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82AEB592418E70BB53D646FB0361351C</key>
+		<key>5432C4D7172356D39CAAE56A5198CCEA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9494390523250106847516AB47E5F9FF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B722BAD5EC72D2F509FF78FF9A3EC1AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
 		<dict>
 			<key>primary</key>
 			<true/>

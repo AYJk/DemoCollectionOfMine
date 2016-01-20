@@ -11,17 +11,16 @@
 #import "CenterViewController.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     LeftViewController *leftVC = [[LeftViewController alloc] initWithNibName:@"LeftViewController" bundle:nil];
     CenterViewController *centerVC = [[CenterViewController alloc] initWithNibName:@"CenterViewController" bundle:nil];
     RightViewController *rightVC = [[RightViewController alloc] initWithNibName:@"RightViewController" bundle:nil];
@@ -37,6 +36,11 @@
     self.window.rootViewController = revealViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //初始化MagicalRecord
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"MyDataBase.sqlite"];
+    
+    NSLog(@"%@",NSHomeDirectory());
     return YES;
 }
 
@@ -60,6 +64,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [MagicalRecord cleanUp];
 }
 
 @end

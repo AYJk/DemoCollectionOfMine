@@ -80,6 +80,13 @@
 		A1743DA81C476B40008A11D7 /* HardWareMotionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1743DA61C476B40008A11D7 /* HardWareMotionViewController.xib */; };
 		A180DD9A1C34C15F00E3C3A7 /* PathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A180DD991C34C15F00E3C3A7 /* PathButton.m */; };
 		A180DD9D1C350E5F00E3C3A7 /* PaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A180DD9C1C350E5F00E3C3A7 /* PaperButton.m */; };
+		A19841011C4F534B0022C8CE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A19840FF1C4F534B0022C8CE /* Model.xcdatamodeld */; };
+		A198411F1C4F651E0022C8CE /* MagicalRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A198411D1C4F651E0022C8CE /* MagicalRecordViewController.m */; };
+		A19841201C4F651E0022C8CE /* MagicalRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A198411E1C4F651E0022C8CE /* MagicalRecordViewController.xib */; };
+		A19841351C4F78890022C8CE /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A198412E1C4F78890022C8CE /* User+CoreDataProperties.m */; };
+		A19841361C4F78890022C8CE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A19841301C4F78890022C8CE /* User.m */; };
+		A19841371C4F78890022C8CE /* Info+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A19841321C4F78890022C8CE /* Info+CoreDataProperties.m */; };
+		A19841381C4F78890022C8CE /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = A19841341C4F78890022C8CE /* Info.m */; };
 		A1B7A6CA1C461008008C9F4F /* WaterWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B7A6C81C461008008C9F4F /* WaterWareViewController.m */; };
 		A1B7A6CB1C461008008C9F4F /* WaterWareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B7A6C91C461008008C9F4F /* WaterWareViewController.xib */; };
 		A1B7A6CE1C461028008C9F4F /* WaterWareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B7A6CD1C461028008C9F4F /* WaterWareView.m */; };
@@ -211,6 +218,18 @@
 		A180DD991C34C15F00E3C3A7 /* PathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathButton.m; sourceTree = "<group>"; };
 		A180DD9B1C350E5F00E3C3A7 /* PaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButton.h; sourceTree = "<group>"; };
 		A180DD9C1C350E5F00E3C3A7 /* PaperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperButton.m; sourceTree = "<group>"; };
+		A19841001C4F534B0022C8CE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A198411C1C4F651E0022C8CE /* MagicalRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordViewController.h; sourceTree = "<group>"; };
+		A198411D1C4F651E0022C8CE /* MagicalRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordViewController.m; sourceTree = "<group>"; };
+		A198411E1C4F651E0022C8CE /* MagicalRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagicalRecordViewController.xib; sourceTree = "<group>"; };
+		A198412D1C4F78890022C8CE /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A198412E1C4F78890022C8CE /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A198412F1C4F78890022C8CE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A19841301C4F78890022C8CE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A19841311C4F78890022C8CE /* Info+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Info+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A19841321C4F78890022C8CE /* Info+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Info+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A19841331C4F78890022C8CE /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		A19841341C4F78890022C8CE /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		A1B7A6C71C461008008C9F4F /* WaterWareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWareViewController.h; sourceTree = "<group>"; };
 		A1B7A6C81C461008008C9F4F /* WaterWareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWareViewController.m; sourceTree = "<group>"; };
 		A1B7A6C91C461008008C9F4F /* WaterWareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterWareViewController.xib; sourceTree = "<group>"; };
@@ -391,6 +410,7 @@
 		A16445561C32210D0052E3D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A198411B1C4F64890022C8CE /* MagicalRecord */,
 				A15430571C3E2D5000E28F1B /* QRCodeDemo */,
 				A139CA2F1C32640800D56DB8 /* CenterViewController */,
 				A139CA2B1C32639700D56DB8 /* MasonryDemo */,
@@ -500,6 +520,8 @@
 				A164455B1C32210D0052E3D6 /* RightPage */,
 				A1740B8F1C312CF600BB25D5 /* AppDelegate.h */,
 				A1740B901C312CF600BB25D5 /* AppDelegate.m */,
+				A198410E1C4F5B260022C8CE /* ModelDemo */,
+				A19840FF1C4F534B0022C8CE /* Model.xcdatamodeld */,
 				A1740B921C312CF600BB25D5 /* ViewController.h */,
 				A1740B931C312CF600BB25D5 /* ViewController.m */,
 				A164456D1C3229470052E3D6 /* PrefixHeader.pch */,
@@ -537,6 +559,31 @@
 				A1740BB31C312CF600BB25D5 /* Info.plist */,
 			);
 			path = DemoCollectionOfMineUITests;
+			sourceTree = "<group>";
+		};
+		A198410E1C4F5B260022C8CE /* ModelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A198412D1C4F78890022C8CE /* User+CoreDataProperties.h */,
+				A198412E1C4F78890022C8CE /* User+CoreDataProperties.m */,
+				A198412F1C4F78890022C8CE /* User.h */,
+				A19841301C4F78890022C8CE /* User.m */,
+				A19841311C4F78890022C8CE /* Info+CoreDataProperties.h */,
+				A19841321C4F78890022C8CE /* Info+CoreDataProperties.m */,
+				A19841331C4F78890022C8CE /* Info.h */,
+				A19841341C4F78890022C8CE /* Info.m */,
+			);
+			path = ModelDemo;
+			sourceTree = "<group>";
+		};
+		A198411B1C4F64890022C8CE /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				A198411C1C4F651E0022C8CE /* MagicalRecordViewController.h */,
+				A198411D1C4F651E0022C8CE /* MagicalRecordViewController.m */,
+				A198411E1C4F651E0022C8CE /* MagicalRecordViewController.xib */,
+			);
+			name = MagicalRecord;
 			sourceTree = "<group>";
 		};
 		B3E59557077F2FECE11B9EA0 /* Frameworks */ = {
@@ -708,6 +755,7 @@
 				A156D61A1C33732400FE64D5 /* chooser-button-tab@2x.png in Resources */,
 				A156D6241C33732400FE64D5 /* chooser-moment-icon-sleep@2x.png in Resources */,
 				A15430671C3E2EB600E28F1B /* CreateViewController.xib in Resources */,
+				A19841201C4F651E0022C8CE /* MagicalRecordViewController.xib in Resources */,
 				A156D61B1C33732400FE64D5 /* chooser-moment-button-highlighted@2x.png in Resources */,
 				A156D6201C33732400FE64D5 /* chooser-moment-icon-music@2x.png in Resources */,
 				A156D6181C33732400FE64D5 /* chooser-button-input@2x.png in Resources */,
@@ -783,19 +831,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A19841351C4F78890022C8CE /* User+CoreDataProperties.m in Sources */,
+				A198411F1C4F651E0022C8CE /* MagicalRecordViewController.m in Sources */,
 				A164456B1C3221FF0052E3D6 /* RightViewController.m in Sources */,
 				A15283501C43788600457C3A /* QQMenuView.m in Sources */,
 				A180DD9A1C34C15F00E3C3A7 /* PathButton.m in Sources */,
+				A19841011C4F534B0022C8CE /* Model.xcdatamodeld in Sources */,
 				A154306B1C3E2EC300E28F1B /* LoadViewController.m in Sources */,
 				A1740B941C312CF600BB25D5 /* ViewController.m in Sources */,
 				A139CA331C32647100D56DB8 /* POPHomeViewController.m in Sources */,
 				A15430611C3E2EA100E28F1B /* ScanViewController.m in Sources */,
 				A16445711C32347C0052E3D6 /* MasonryViewController.m in Sources */,
+				A19841361C4F78890022C8CE /* User.m in Sources */,
 				A15430661C3E2EB600E28F1B /* CreateViewController.m in Sources */,
 				A1B7A6CE1C461028008C9F4F /* WaterWareView.m in Sources */,
 				A156D5FF1C33710500FE64D5 /* PathMenuViewController.m in Sources */,
 				A16445541C3220150052E3D6 /* SWRevealViewController.m in Sources */,
 				A139CA381C32682200D56DB8 /* POPPanUpViewController.m in Sources */,
+				A19841381C4F78890022C8CE /* Info.m in Sources */,
 				A1740B911C312CF600BB25D5 /* AppDelegate.m in Sources */,
 				A139CA111C324FF200D56DB8 /* POPViewController.m in Sources */,
 				A154305C1C3E2D8900E28F1B /* QRCodeViewController.m in Sources */,
@@ -806,6 +859,7 @@
 				A139CA161C3250D200D56DB8 /* CATransactionViewController.m in Sources */,
 				A1743DA71C476B40008A11D7 /* HardWareMotionViewController.m in Sources */,
 				A1740B8E1C312CF600BB25D5 /* main.m in Sources */,
+				A19841371C4F78890022C8CE /* Info+CoreDataProperties.m in Sources */,
 				A15430511C3DFC3D00E28F1B /* PieChartCircularArc.m in Sources */,
 				A154304D1C3DF90100E28F1B /* CoreAnimaViewController.m in Sources */,
 				A15430551C3DFC5D00E28F1B /* PieChatViewController.m in Sources */,
@@ -1104,6 +1158,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A19840FF1C4F534B0022C8CE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A19841001C4F534B0022C8CE /* Model.xcdatamodel */,
+			);
+			currentVersion = A19841001C4F534B0022C8CE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1740B811C312CF600BB25D5 /* Project object */;
 }

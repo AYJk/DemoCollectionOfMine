@@ -12,7 +12,10 @@
 #import "POPHomeViewController.h"
 #import "CoreAnimaViewController.h"
 #import "QRCodeViewController.h"
+#import "MagicalRecordViewController.h"
+
 @interface LeftViewController () <UITableViewDelegate, UITableViewDataSource>
+
 @property (nonatomic, strong) NSArray *demosArray;
 
 @end
@@ -23,7 +26,7 @@ static NSString *reuseID = @"LeftCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _demosArray = @[@"Home",@"Masonry",@"POP",@"CoreAnimation",@"QRCode"];
+    _demosArray = @[@"Home",@"Masonry",@"POP",@"CoreAnimation",@"QRCode",@"MagicalRecord"];
     [self configTableView];
 }
 
@@ -82,7 +85,11 @@ static NSString *reuseID = @"LeftCell";
         UINavigationController *qrCodeNC = [[UINavigationController alloc] initWithRootViewController:qrCodeVC];
         qrCodeVC.viewControllerTitle = cell.textLabel.text;
         [revealViewController pushFrontViewController:qrCodeNC animated:YES];
-        
+    } else if (indexPath.row == 5) {
+        MagicalRecordViewController *magicalVC = [[MagicalRecordViewController alloc] init];
+        UINavigationController *magicalNC = [[UINavigationController alloc] initWithRootViewController:magicalVC];
+        magicalVC.viewControllerTitle = cell.textLabel.text;
+        [revealViewController pushFrontViewController:magicalNC animated:YES];
     }
 }
 

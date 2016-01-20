@@ -15,5 +15,6 @@
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 #import "POP.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 #endif /* PrefixHeader_pch */
