@@ -8,6 +8,7 @@
 
 #import "PieChatViewController.h"
 #import "PieChartCircularArc.h"
+#import "HalfPieChatProgressView.h"
 @interface PieChatViewController ()
 
 @end
@@ -18,8 +19,11 @@
     
     [super viewDidLoad];
     self.title = @"PieChat";
-    PieChartCircularArc *pieChat = [[PieChartCircularArc alloc] pieChartCenter:CGPointMake([UIScreen mainScreen].bounds.size.width * .5, [UIScreen mainScreen].bounds.size.height * .5) radius:120 colors:@[[UIColor redColor], [UIColor blueColor], [UIColor yellowColor], [UIColor grayColor]] datas:@[@.2,@.4,@.1,@.3] offset:20];
-    [self.view addSubview:pieChat];
+//    PieChartCircularArc *pieChat = [[PieChartCircularArc alloc] pieChartCenter:CGPointMake([UIScreen mainScreen].bounds.size.width * .5, [UIScreen mainScreen].bounds.size.height * .5) radius:120 colors:@[[UIColor redColor], [UIColor blueColor], [UIColor yellowColor], [UIColor grayColor]] datas:@[@.2,@.4,@.1,@.3] offset:20];
+//    [self.view addSubview:pieChat];
+    HalfPieChatProgressView *halfPie = [[HalfPieChatProgressView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    halfPie.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:halfPie];
 }
 
 - (void)didReceiveMemoryWarning {
