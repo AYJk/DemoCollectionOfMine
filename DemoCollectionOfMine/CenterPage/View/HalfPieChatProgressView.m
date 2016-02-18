@@ -74,6 +74,7 @@
         _lineWidth = 10;
         _radius = frame.size.width * .5;
         _angle = AYHalfShapeLayerAngleMake(_startAngle, _endAngle);
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }

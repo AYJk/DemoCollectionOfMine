@@ -22,7 +22,10 @@
 //    PieChartCircularArc *pieChat = [[PieChartCircularArc alloc] pieChartCenter:CGPointMake([UIScreen mainScreen].bounds.size.width * .5, [UIScreen mainScreen].bounds.size.height * .5) radius:120 colors:@[[UIColor redColor], [UIColor blueColor], [UIColor yellowColor], [UIColor grayColor]] datas:@[@.2,@.4,@.1,@.3] offset:20];
 //    [self.view addSubview:pieChat];
     HalfPieChatProgressView *halfPie = [[HalfPieChatProgressView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    halfPie.backgroundColor = [UIColor yellowColor];
+    halfPie.lineWidth = 7;
+    halfPie.finishCorlor = [UIColor colorWithRed:241 /255.0 green:47 / 255.0 blue:9 /255.0 alpha:1];
+    halfPie.unfinishCorlor = [UIColor colorWithRed:255 / 255.0 green:223 / 255.0 blue:216.0/255.0 alpha:1];
+    halfPie.backCorlor = [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1];
     [self.view addSubview:halfPie];
 }
 

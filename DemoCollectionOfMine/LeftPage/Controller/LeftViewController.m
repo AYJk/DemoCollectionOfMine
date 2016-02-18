@@ -13,7 +13,7 @@
 #import "CoreAnimaViewController.h"
 #import "QRCodeViewController.h"
 #import "MagicalRecordViewController.h"
-
+#import "TouchIDViewController.h"
 @interface LeftViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *demosArray;
@@ -26,7 +26,7 @@ static NSString *reuseID = @"LeftCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _demosArray = @[@"Home",@"Masonry",@"POP",@"CoreAnimation",@"QRCode",@"MagicalRecord"];
+    _demosArray = @[@"Home",@"Masonry",@"POP",@"CoreAnimation",@"QRCode",@"MagicalRecord",@"Touch ID"];
     [self configTableView];
 }
 
@@ -90,6 +90,10 @@ static NSString *reuseID = @"LeftCell";
         UINavigationController *magicalNC = [[UINavigationController alloc] initWithRootViewController:magicalVC];
         magicalVC.viewControllerTitle = cell.textLabel.text;
         [revealViewController pushFrontViewController:magicalNC animated:YES];
+    } else if (indexPath.row == 6) {
+        TouchIDViewController *touchIDVC = [[TouchIDViewController alloc] init];
+        UINavigationController *touchIDNC = [[UINavigationController alloc] initWithRootViewController:touchIDVC];
+        [revealViewController pushFrontViewController:touchIDNC animated:YES];
     }
 }
 

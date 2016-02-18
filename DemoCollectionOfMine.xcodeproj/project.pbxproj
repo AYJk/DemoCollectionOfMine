@@ -68,6 +68,9 @@
 		A164456C1C3221FF0052E3D6 /* RightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A164456A1C3221FF0052E3D6 /* RightViewController.xib */; };
 		A16445711C32347C0052E3D6 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A164456F1C32347C0052E3D6 /* MasonryViewController.m */; };
 		A16445721C32347C0052E3D6 /* MasonryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16445701C32347C0052E3D6 /* MasonryViewController.xib */; };
+		A164818E1C75812900658338 /* AYTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = A164818D1C75812900658338 /* AYTouchID.m */; };
+		A16481921C758F5200658338 /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16481901C758F5200658338 /* TouchIDViewController.m */; };
+		A16481931C758F5200658338 /* TouchIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A16481911C758F5200658338 /* TouchIDViewController.xib */; };
 		A1740B8E1C312CF600BB25D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1740B8D1C312CF600BB25D5 /* main.m */; };
 		A1740B911C312CF600BB25D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1740B901C312CF600BB25D5 /* AppDelegate.m */; };
 		A1740B941C312CF600BB25D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1740B931C312CF600BB25D5 /* ViewController.m */; };
@@ -196,6 +199,11 @@
 		A164456E1C32347C0052E3D6 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasonryViewController.h; path = Controller/MasonryViewController.h; sourceTree = "<group>"; };
 		A164456F1C32347C0052E3D6 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasonryViewController.m; path = Controller/MasonryViewController.m; sourceTree = "<group>"; };
 		A16445701C32347C0052E3D6 /* MasonryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasonryViewController.xib; path = Controller/MasonryViewController.xib; sourceTree = "<group>"; };
+		A164818C1C75812900658338 /* AYTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYTouchID.h; sourceTree = "<group>"; };
+		A164818D1C75812900658338 /* AYTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYTouchID.m; sourceTree = "<group>"; };
+		A164818F1C758F5200658338 /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDViewController.h; sourceTree = "<group>"; };
+		A16481901C758F5200658338 /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDViewController.m; sourceTree = "<group>"; };
+		A16481911C758F5200658338 /* TouchIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchIDViewController.xib; sourceTree = "<group>"; };
 		A1740B891C312CF600BB25D5 /* DemoCollectionOfMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollectionOfMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1740B8D1C312CF600BB25D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1740B8F1C312CF600BB25D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -413,6 +421,7 @@
 		A16445561C32210D0052E3D6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A164818B1C757CBD00658338 /* TouchID */,
 				A198411B1C4F64890022C8CE /* MagicalRecord */,
 				A15430571C3E2D5000E28F1B /* QRCodeDemo */,
 				A139CA2F1C32640800D56DB8 /* CenterViewController */,
@@ -493,6 +502,18 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A164818B1C757CBD00658338 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				A164818C1C75812900658338 /* AYTouchID.h */,
+				A164818D1C75812900658338 /* AYTouchID.m */,
+				A164818F1C758F5200658338 /* TouchIDViewController.h */,
+				A16481901C758F5200658338 /* TouchIDViewController.m */,
+				A16481911C758F5200658338 /* TouchIDViewController.xib */,
+			);
+			name = TouchID;
 			sourceTree = "<group>";
 		};
 		A1740B801C312CF600BB25D5 = {
@@ -746,6 +767,7 @@
 				A156D6231C33732400FE64D5 /* chooser-moment-icon-sleep-highlighted@2x.png in Resources */,
 				A156D6251C33732400FE64D5 /* chooser-moment-icon-thought-highlighted@2x.png in Resources */,
 				A139CA291C32514F00D56DB8 /* 8.jpg in Resources */,
+				A16481931C758F5200658338 /* TouchIDViewController.xib in Resources */,
 				A139CA281C32514F00D56DB8 /* 7.jpg in Resources */,
 				A1740B971C312CF600BB25D5 /* Main.storyboard in Resources */,
 				A156D6001C33710500FE64D5 /* PathMenuViewController.xib in Resources */,
@@ -859,6 +881,7 @@
 				A139CA111C324FF200D56DB8 /* POPViewController.m in Sources */,
 				A154305C1C3E2D8900E28F1B /* QRCodeViewController.m in Sources */,
 				A156D6291C33A53300FE64D5 /* PathButtonView.m in Sources */,
+				A164818E1C75812900658338 /* AYTouchID.m in Sources */,
 				A16445661C3221F00052E3D6 /* LeftViewController.m in Sources */,
 				A1B7A6CA1C461008008C9F4F /* WaterWareViewController.m in Sources */,
 				A180DD9D1C350E5F00E3C3A7 /* PaperButton.m in Sources */,
@@ -868,6 +891,7 @@
 				A19841371C4F78890022C8CE /* Info+CoreDataProperties.m in Sources */,
 				A15430511C3DFC3D00E28F1B /* PieChartCircularArc.m in Sources */,
 				A154304D1C3DF90100E28F1B /* CoreAnimaViewController.m in Sources */,
+				A16481921C758F5200658338 /* TouchIDViewController.m in Sources */,
 				A15430551C3DFC5D00E28F1B /* PieChatViewController.m in Sources */,
 				A16445611C3221E10052E3D6 /* CenterViewController.m in Sources */,
 			);
