@@ -9,8 +9,10 @@
 #import "TouchIDViewController.h"
 #import "AYTouchID.h"
 @interface TouchIDViewController () <AYTouchIDDelegate>
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) AYTouchID *touchID;
+
 @end
 
 @implementation TouchIDViewController
