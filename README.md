@@ -41,5 +41,3 @@ Personal DemoCollection
 
 ### 二维码扫描，开闪光灯，相册读取
 ![image](https://github.com/AYJk/DemoCollectionOfMine/blob/master/DemoCollectionOfMine/screenShot/IMG_0359.PNG?raw=true)
-
-# 如果帮到了你，请为我star一下。鼓励我，也请star一下。谢谢
